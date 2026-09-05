@@ -1,0 +1,61 @@
+{
+  "episode": "EP01",
+  "title": "5 Thai Phrases That Will Change Your Trip to Thailand",
+  "description": "Master 5 essential Thai phrases that will transform your trip to Thailand! Learn how to order food, greet locals, and navigate daily situations like a pro. Perfect for first-time visitors and travel enthusiasts.",
+  "publish_date": "2026-09-05",
+  "duration_seconds": 400,
+  "duration_formatted": "6:40",
+  "youtube_url": "https://www.youtube.com/watch?v=nlVfTQ67GAs",
+  "channel": "Speak Thai Today",
+  "category": "Thai Phrases & Expressions",
+  "tags": [
+    "thai language",
+    "learn thai",
+    "thai phrases",
+    "thailand travel",
+    "thai for travelers",
+    "beginner thai",
+    "thai pronunciation",
+    "speak thai"
+  ],
+  "phrases_taught": [
+    {
+      "english": "Hello",
+      "thai": "สวัสดีค่ะ / สวัสดีครับ",
+      "romanized": "Sa-wat-dee kha/khrap",
+      "timing": "0:40–1:50"
+    },
+    {
+      "english": "Thank you very much",
+      "thai": "ขอบคุณมากๆ ค่ะ/ครับ",
+      "romanized": "Khob-khun maak maak kha/khrap",
+      "timing": "1:50–3:00"
+    },
+    {
+      "english": "How much is this?",
+      "thai": "เท่าไหร่ครับ?",
+      "romanized": "Tao-rai khrap?",
+      "timing": "3:00–4:10"
+    },
+    {
+      "english": "Delicious!",
+      "thai": "อร่อยมาก!",
+      "romanized": "A-roi maak!",
+      "timing": "4:10–5:10"
+    },
+    {
+      "english": "No worries / It's okay",
+      "thai": "ไม่เป็นไร",
+      "romanized": "Mai pen rai",
+      "timing": "5:10–6:00"
+    }
+  ],
+  "learning_outcomes": [
+    "Understand Thai politeness particles (ค่ะ/ครับ)",
+    "Master proper pronunciation of essential phrases",
+    "Learn cultural context for using these phrases",
+    "Apply phrases in real-world Thai situations"
+  ],
+  "target_audience": "Thai language beginners, travelers, first-time visitors to Thailand",
+  "status": "published"
+}
