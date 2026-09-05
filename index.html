@@ -258,6 +258,14 @@
             line-height: 1.5;
         }
 
+        .episode-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
         .episode-link {
             color: var(--accent-bright);
             text-decoration: none;
@@ -402,6 +410,11 @@
             .episodes {
                 gap: 1.5rem;
             }
+
+            .episode-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
         }
     </style>
 </head>
@@ -438,33 +451,47 @@
             <h2 class="section-title">Featured Lessons</h2>
 
             <div class="episodes">
+                <!-- EP.01 - LIVE -->
                 <article class="episode-card">
                     <div class="episode-thumbnail">🇹🇭</div>
                     <div class="episode-content">
                         <div class="episode-number">EP.01</div>
-                        <h3 class="episode-title">5 Thai Phrases That Will Change Your Trip</h3>
-                        <p class="episode-description">Learn the essential phrases you need to connect with locals and make your Thailand experience unforgettable.</p>
-                        <a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" class="episode-link">Watch now →</a>
+                        <h3 class="episode-title">5 Thai Phrases That Will Change Your Trip to Thailand</h3>
+                        <p class="episode-description">Master 5 essential Thai phrases that will transform your trip to Thailand! Learn how to order food, greet locals, and navigate daily situations like a pro. Perfect for first-time visitors and travel enthusiasts.</p>
+                        <div class="episode-meta">
+                            <span>⏱️ 6:40</span>
+                            <span>📅 Sept 5, 2026</span>
+                        </div>
+                        <a href="episodes/ep01/" target="_blank" class="episode-link">View Details →</a>
+                        <a href="https://www.youtube.com/watch?v=nlVfTQ67GAs" target="_blank" class="episode-link" style="margin-left: 1rem;">Watch on YouTube →</a>
                     </div>
                 </article>
 
+                <!-- EP.02 - TEMPLATE -->
                 <article class="episode-card">
                     <div class="episode-thumbnail">👋</div>
                     <div class="episode-content">
                         <div class="episode-number">EP.02</div>
                         <h3 class="episode-title">How to Say Hello in Thai — The RIGHT Way</h3>
                         <p class="episode-description">Discover the cultural nuances of Thai greetings and impress locals with proper pronunciation and respect.</p>
-                        <a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" class="episode-link">Watch now →</a>
+                        <div class="episode-meta">
+                            <span>Coming Soon</span>
+                        </div>
+                        <a href="#" class="episode-link" style="color: var(--text-secondary); cursor: not-allowed;">Coming Soon →</a>
                     </div>
                 </article>
 
+                <!-- EP.03 - TEMPLATE -->
                 <article class="episode-card">
                     <div class="episode-thumbnail">🍜</div>
                     <div class="episode-content">
                         <div class="episode-number">EP.03</div>
                         <h3 class="episode-title">Order Street Food in Thai (They'll Love You!)</h3>
                         <p class="episode-description">Master the phrases to order authentic Thai street food like a pro and chat with street vendors.</p>
-                        <a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" class="episode-link">Watch now →</a>
+                        <div class="episode-meta">
+                            <span>Coming Soon</span>
+                        </div>
+                        <a href="#" class="episode-link" style="color: var(--text-secondary); cursor: not-allowed;">Coming Soon →</a>
                     </div>
                 </article>
             </div>

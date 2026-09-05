@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP.01: 5 Thai Phrases That Will Change Your Trip - Speak Thai Today</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
+
+    <style>
+        :root {
+            --bg-primary: #F9F6F1;
+            --bg-secondary: #FFFFFF;
+            --text-primary: #2C3E50;
+            --text-secondary: #5F6B7A;
+            --accent-primary: #1B3A70;
+            --accent-gold: #D4A574;
+            --accent-bright: #50C878;
+            --border-color: #E8E3DB;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                --bg-primary: #1A1A1A;
+                --bg-secondary: #2D2D2D;
+                --text-primary: #F5F1ED;
+                --text-secondary: #B8B0A8;
+                --accent-primary: #6BA3D4;
+                --accent-gold: #E8C994;
+                --accent-bright: #5EE98F;
+                --border-color: #3D3D3D;
+            }
+        }
+
+        :root[data-theme="dark"] {
+            --bg-primary: #1A1A1A;
+            --bg-secondary: #2D2D2D;
+            --text-primary: #F5F1ED;
+            --text-secondary: #B8B0A8;
+            --accent-primary: #6BA3D4;
+            --accent-gold: #E8C994;
+            --accent-bright: #5EE98F;
+            --border-color: #3D3D3D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Header/Navigation */
+        header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            text-decoration: none;
+        }
+
+        .nav-back {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-back:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--accent-primary) 0%, #2D5A9B 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-wrap: balance;
+        }
+
+        .episode-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--accent-gold);
+            color: var(--accent-primary);
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background: #E8C994;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+            color: var(--accent-primary);
+        }
+
+        /* Phrases Section */
+        .phrases-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .phrase-card {
+            background: var(--bg-secondary);
+            border-left: 4px solid var(--accent-gold);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .phrase-number {
+            color: var(--accent-gold);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .phrase-english {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .phrase-thai {
+            font-size: 1.2rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .phrase-romanized {
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .phrase-timing {
+            color: var(--accent-bright);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 0.75rem;
+        }
+
+        /* Learning Outcomes */
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .outcome-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .outcome-icon {
+            font-size: 1.5rem;
+            min-width: 30px;
+        }
+
+        .outcome-text {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Transcript Section */
+        .transcript {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .transcript h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+        }
+
+        .transcript-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .transcript-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .transcript-time {
+            color: var(--accent-gold);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .transcript-text {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-text {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .episode-meta {
+                gap: 1rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .outcomes-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .transcript {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="../../" class="logo">🇹🇭 Speak Thai Today</a>
+            <a href="../../" class="nav-back">← Back to Lessons</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>EP.01: 5 Thai Phrases That Will Change Your Trip to Thailand</h1>
+        <div class="episode-meta">
+            <div class="meta-item">⏱️ Duration: 6 minutes 40 seconds</div>
+            <div class="meta-item">📅 Published: September 5, 2026</div>
+            <div class="meta-item">🎯 Category: Thai Phrases & Expressions</div>
+        </div>
+        <a href="https://www.youtube.com/watch?v=nlVfTQ67GAs" target="_blank" class="cta-button">
+            ▶️ Watch on YouTube
+        </a>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Overview -->
+        <section>
+            <h2 class="section-title">Overview</h2>
+            <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">
+                Master 5 essential Thai phrases that will transform your trip to Thailand! Learn how to order food, greet locals, and navigate daily situations like a pro. Perfect for first-time visitors and travel enthusiasts.
+            </p>
+        </section>
+
+        <!-- Phrases Taught -->
+        <section>
+            <h2 class="section-title">5 Phrases You'll Learn</h2>
+            <div class="phrases-grid">
+                <div class="phrase-card">
+                    <div class="phrase-number">Phrase 1</div>
+                    <div class="phrase-english">Hello / Goodbye</div>
+                    <div class="phrase-thai">สวัสดีค่ะ / สวัสดีครับ</div>
+                    <div class="phrase-romanized">Sa-wat-dee kha/khrap</div>
+                    <span class="phrase-timing">0:40 – 1:50</span>
+                </div>
+
+                <div class="phrase-card">
+                    <div class="phrase-number">Phrase 2</div>
+                    <div class="phrase-english">Thank you very much</div>
+                    <div class="phrase-thai">ขอบคุณมากๆ ค่ะ/ครับ</div>
+                    <div class="phrase-romanized">Khob-khun maak maak kha/khrap</div>
+                    <span class="phrase-timing">1:50 – 3:00</span>
+                </div>
+
+                <div class="phrase-card">
+                    <div class="phrase-number">Phrase 3</div>
+                    <div class="phrase-english">How much is this?</div>
+                    <div class="phrase-thai">เท่าไหร่ครับ?</div>
+                    <div class="phrase-romanized">Tao-rai khrap?</div>
+                    <span class="phrase-timing">3:00 – 4:10</span>
+                </div>
+
+                <div class="phrase-card">
+                    <div class="phrase-number">Phrase 4</div>
+                    <div class="phrase-english">Delicious!</div>
+                    <div class="phrase-thai">อร่อยมาก!</div>
+                    <div class="phrase-romanized">A-roi maak!</div>
+                    <span class="phrase-timing">4:10 – 5:10</span>
+                </div>
+
+                <div class="phrase-card">
+                    <div class="phrase-number">Phrase 5</div>
+                    <div class="phrase-english">No worries / It's okay</div>
+                    <div class="phrase-thai">ไม่เป็นไร</div>
+                    <div class="phrase-romanized">Mai pen rai</div>
+                    <span class="phrase-timing">5:10 – 6:00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Outcomes -->
+        <section>
+            <h2 class="section-title">What You'll Learn</h2>
+            <div class="outcomes-grid">
+                <div class="outcome-card">
+                    <div class="outcome-icon">📚</div>
+                    <div class="outcome-text">Understand Thai politeness particles (ค่ะ/ครับ)</div>
+                </div>
+                <div class="outcome-card">
+                    <div class="outcome-icon">🎤</div>
+                    <div class="outcome-text">Master proper pronunciation of essential phrases</div>
+                </div>
+                <div class="outcome-card">
+                    <div class="outcome-icon">🌏</div>
+                    <div class="outcome-text">Learn cultural context for using these phrases</div>
+                </div>
+                <div class="outcome-card">
+                    <div class="outcome-icon">✨</div>
+                    <div class="outcome-text">Apply phrases in real-world Thai situations</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Transcript -->
+        <section>
+            <h2 class="section-title">Full Transcript</h2>
+            <div class="transcript">
+                <div class="transcript-item">
+                    <span class="transcript-time">0:00 – 0:40</span>
+                    <div class="transcript-text">
+                        <strong>Introduction:</strong> Welcome to Speak Thai Today! I'm your host, and today we're going to learn 5 essential Thai phrases that will completely change how you experience Thailand. Whether you're visiting Bangkok, exploring Chiang Mai, or just meeting Thai speakers, these phrases will help you connect with locals and navigate daily situations with confidence.
+                    </div>
+                </div>
+
+                <div class="transcript-item">
+                    <span class="transcript-time">0:40 – 1:50</span>
+                    <div class="transcript-text">
+                        <strong>Phrase 1: Hello/Goodbye - สวัสดีค่ะ/ครับ (Sa-wat-dee kha/khrap)</strong><br><br>
+                        This is probably the most important phrase you'll learn. "Sawasdee" means both hello and goodbye in Thai. When you say it, you'll notice two different endings: "kha" (ค่ะ) if you're female, and "khrap" (ครับ) if you're male. These are politeness particles that show respect. Let me teach you the proper way to say it with the traditional wai gesture.
+                    </div>
+                </div>
+
+                <div class="transcript-item">
+                    <span class="transcript-time">1:50 – 3:00</span>
+                    <div class="transcript-text">
+                        <strong>Phrase 2: Thank you very much - ขอบคุณมากๆ ค่ะ/ครับ (Khob-khun maak maak kha/khrap)</strong><br><br>
+                        "Khob khun" means thank you. When you add "maak maak," you're saying "thank you very much." This phrase is essential because Thai people truly appreciate gratitude. Whether you're thanking someone for directions, a meal, or service, using this phrase with the proper politeness particle will win hearts.
+                    </div>
+                </div>
+
+                <div class="transcript-item">
+                    <span class="transcript-time">3:00 – 4:10</span>
+                    <div class="transcript-text">
+                        <strong>Phrase 3: How much is this? - เท่าไหร่ครับ? (Tao-rai khrap?)</strong><br><br>
+                        When you're shopping at the night market or trying local street food, you'll definitely need this phrase. "Tao rai" literally translates to "how much." This simple question can save you from confusion and help you haggle at markets. Remember, in many Thai markets, negotiating prices is expected and can be fun!
+                    </div>
+                </div>
+
+                <div class="transcript-item">
+                    <span class="transcript-time">4:10 – 5:10</span>
+                    <div class="transcript-text">
+                        <strong>Phrase 4: Delicious! - อร่อยมาก! (A-roi maak!)</strong><br><br>
+                        Thailand has some of the most amazing food in the world, and Thai people love compliments about their cuisine. "Aroy" means delicious, and "maak" means very. When you say "aroy maak," you're telling people the food is really delicious. This will instantly make you popular at any family dinner or restaurant!
+                    </div>
+                </div>
+
+                <div class="transcript-item">
+                    <span class="transcript-time">5:10 – 6:00</span>
+                    <div class="transcript-text">
+                        <strong>Phrase 5: No worries / It's okay - ไม่เป็นไร (Mai pen rai)</strong><br><br>
+                        This phrase is incredibly useful because it can mean "no worries," "it's okay," "never mind," or "you're welcome." It's one of the most versatile phrases in Thai. Use it when someone apologizes, when you want to say you don't mind, or as a cool, relaxed response. It's the go-to phrase for casual Thai conversations.
+                    </div>
+                </div>
+
+                <div class="transcript-item">
+                    <span class="transcript-time">6:00 – 6:40</span>
+                    <div class="transcript-text">
+                        <strong>Outro:</strong> Congratulations! You've just learned 5 essential phrases that will truly transform your experience in Thailand. Practice saying these phrases out loud—pronunciation and the tone of voice matter. Thai people are incredibly welcoming and will appreciate your effort to speak their language. Subscribe to Speak Thai Today for more lessons every week. Come back next time as we dive deeper into Thai greetings and learn the proper way to show respect in different situations. Thank you, and I'll see you next time!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Audience -->
+        <section>
+            <h2 class="section-title">Perfect For</h2>
+            <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">
+                Thai language beginners • Travelers planning a Thailand trip • First-time visitors to Thailand • Anyone wanting to connect with Thai speakers
+            </p>
+        </section>
+
+        <!-- Watch Now -->
+        <section style="text-align: center; margin: 3rem 0;">
+            <a href="https://www.youtube.com/watch?v=nlVfTQ67GAs" target="_blank" class="cta-button">
+                ▶️ Watch This Episode on YouTube
+            </a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.youtube.com/@SpeakThaiToday" target="_blank">YouTube</a>
+                <a href="https://www.youtube.com/@CognitiveCanvas" target="_blank">Cognitive Canvas</a>
+                <a href="https://www.amazon.com/s?k=thai+language" target="_blank">Thai Books on Amazon</a>
+            </div>
+            <p class="footer-text">© 2026 Speak Thai Today. Made with ❤️ for Thai language learners everywhere.</p>
+        </div>
+    </footer>
+</body>
+</html>
