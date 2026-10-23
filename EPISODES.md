@@ -23,10 +23,34 @@ Master 5 essential Thai phrases that will transform your trip to Thailand! Learn
 
 ---
 
-## Upcoming Episodes
+### EP02: 4 Questions Every 7-Eleven Cashier Asks You in Thailand (Easy Thai)
+- **Status**: ✅ Published
+- **Upload Date**: October 23, 2026
+- **Lesson Page**: [episodes/ep02/](https://chodnoksujitra.github.io/speak-thai-today/episodes/ep02/)
+- **Duration**: 5:08
+- **Series**: Alex's First Month in Thailand
+- **Category**: Thai for Travelers | Survival Thai
+- **Phrases Taught**:
+  - รับถุงไหมคะ (ráp thǔng mǎi khá) — Do you want a bag?
+  - อุ่นไหมคะ (ùn mǎi khá) — Heat it up?
+  - รับหลอด / ช้อนไหมคะ (ráp lòot / cháwn mǎi khá) — Do you want a straw / spoon?
+  - มีสมาชิกไหมคะ (mii sà-maa-chík mǎi khá) — Do you have a membership?
+  - ทั้งหมด ... บาทค่ะ (tháng-mòt ... bàat khâ) — The total is ... baht
 
-*Planning more episodes... Check back soon!*
+**Description**:
+Learn the 4 Thai questions every 7-Eleven cashier in Thailand asks, the yes/no formula, and how to understand the price. Free printable worksheet.
+
+**Resources**:
+- 📄 Full Transcript: `/episodes/ep02/transcript.md`
+- 📋 Metadata: `/episodes/ep02/metadata.json`
+- 📝 Worksheet (PDF): `/episodes/ep02/speak-thai-today-ep02-7-eleven-worksheet.pdf`
 
 ---
 
-**Last Updated**: September 5, 2026
+## Upcoming Episodes
+
+- EP03: 5 Thai Words That Get Foreigners Laughed At (Coming Soon)
+
+---
+
+**Last Updated**: October 23, 2026
