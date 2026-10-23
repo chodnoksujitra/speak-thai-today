@@ -1,579 +1,130 @@
-<!DOCTYPE html>
-<html lang="th">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speak Thai Today — Learn Thai for Travelers (Free Lessons & Worksheets)</title>
-    <meta name="description" content="Learn real, everyday Thai for travel and life in Thailand with a native Thai teacher. Short video lessons, pronunciation help and free printable worksheets — new lesson every week.">
-    <meta name="keywords" content="learn thai, speak thai, thai for travelers, thai for beginners, thai phrases, free thai worksheets, thai lessons, thailand travel, speak thai today">
-    <link rel="canonical" href="https://chodnoksujitra.github.io/speak-thai-today/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Speak Thai Today — Learn Thai for Travelers">
-    <meta property="og:description" content="Free Thai video lessons + printable worksheets. New lesson every week.">
-    <meta property="og:url" content="https://chodnoksujitra.github.io/speak-thai-today/">
-    <meta property="og:image" content="https://chodnoksujitra.github.io/speak-thai-today/episodes/ep02/thumbnail.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
-
-    <style>
-        :root {
-            --bg-primary: #F9F6F1;
-            --bg-secondary: #FFFFFF;
-            --text-primary: #2C3E50;
-            --text-secondary: #5F6B7A;
-            --accent-primary: #1B3A70;
-            --accent-gold: #D4A574;
-            --accent-bright: #50C878;
-            --border-color: #E8E3DB;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) {
-                --bg-primary: #1A1A1A;
-                --bg-secondary: #2D2D2D;
-                --text-primary: #F5F1ED;
-                --text-secondary: #B8B0A8;
-                --accent-primary: #6BA3D4;
-                --accent-gold: #E8C994;
-                --accent-bright: #5EE98F;
-                --border-color: #3D3D3D;
-            }
-        }
-
-        :root[data-theme="dark"] {
-            --bg-primary: #1A1A1A;
-            --bg-secondary: #2D2D2D;
-            --text-primary: #F5F1ED;
-            --text-secondary: #B8B0A8;
-            --accent-primary: #6BA3D4;
-            --accent-gold: #E8C994;
-            --accent-bright: #5EE98F;
-            --border-color: #3D3D3D;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-
-        /* Header/Navigation */
-        header {
-            background: var(--bg-secondary);
-            border-bottom: 1px solid var(--border-color);
-            padding: 1.5rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--accent-primary);
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text-primary);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-gold);
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--accent-primary) 0%, #2D5A9B 100%);
-            color: white;
-            padding: 5rem 2rem;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            text-wrap: balance;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-        }
-
-        .hero .subtitle {
-            font-size: 1rem;
-            opacity: 0.85;
-            margin-bottom: 3rem;
-        }
-
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            background: var(--accent-gold);
-            color: var(--accent-primary);
-            padding: 1rem 2.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .cta-button:hover {
-            background: #E8C994;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(212, 165, 116, 0.3);
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-        }
-
-        /* Main Content */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        .section-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 3rem;
-            color: var(--accent-primary);
-            text-wrap: balance;
-        }
-
-        .section-subtitle {
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* Episodes Grid */
-        .episodes {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            margin-bottom: 4rem;
-        }
-
-        .episode-card {
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .episode-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent-gold);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .episode-thumbnail {
-            width: 100%;
-            height: 180px;
-            background: linear-gradient(135deg, var(--accent-primary), var(--accent-gold));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            overflow: hidden;
-        }
-
-        .episode-thumbnail img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            display: block;
-        }
-
-        .episode-content {
-            padding: 1.5rem;
-        }
-
-        .episode-number {
-            font-size: 0.85rem;
-            color: var(--accent-gold);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 0.5rem;
-        }
-
-        .episode-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            color: var(--text-primary);
-        }
-
-        .episode-description {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.5;
-        }
-
-        .episode-meta {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-
-        .episode-link {
-            color: var(--accent-bright);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        .episode-link:hover {
-            color: var(--accent-gold);
-        }
-
-        /* About Section */
-        .about {
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            padding: 3rem;
-            margin-bottom: 4rem;
-            border: 1px solid var(--border-color);
-        }
-
-        .about h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: var(--accent-primary);
-        }
-
-        .about p {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        /* Features Grid */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .feature {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            min-width: 50px;
-        }
-
-        .feature-text h3 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-        }
-
-        .feature-text p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, var(--accent-primary) 0%, #2D5A9B 100%);
-            color: white;
-            padding: 3rem 2rem;
-            border-radius: 12px;
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .cta-section h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            text-wrap: balance;
-        }
-
-        .cta-section p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--bg-secondary);
-            border-top: 1px solid var(--border-color);
-            padding: 3rem 2rem;
-            text-align: center;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .social-links a {
-            color: var(--accent-primary);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: var(--accent-gold);
-        }
-
-        .footer-text {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .container {
-                padding: 2rem 1rem;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-
-            .about {
-                padding: 1.5rem;
-            }
-
-            .cta-section h2 {
-                font-size: 1.5rem;
-            }
-
-            .episodes {
-                gap: 1.5rem;
-            }
-
-            .episode-meta {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speak Thai Today — Learn Thai for Travelers (Free Lessons & Worksheets)</title>
+<meta name="description" content="Learn real, everyday Thai for travel and life in Thailand with a native Thai teacher. Short video lessons, pronunciation help and free printable worksheets — new lesson every week.">
+<meta name="keywords" content="learn thai, speak thai, thai for travelers, thai for beginners, thai phrases, free thai worksheets, thai lessons, thailand travel, speak thai today">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://chodnoksujitra.github.io/speak-thai-today/">
+<meta name="theme-color" content="#1C355E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Speak Thai Today">
+<meta property="og:title" content="Speak Thai Today — Learn Thai for Travelers">
+<meta property="og:description" content="Free Thai video lessons + printable worksheets. New lesson every week.">
+<meta property="og:url" content="https://chodnoksujitra.github.io/speak-thai-today/">
+<meta property="og:image" content="https://chodnoksujitra.github.io/speak-thai-today/episodes/ep02/thumbnail.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Speak Thai Today","url":"https://chodnoksujitra.github.io/speak-thai-today/","description":"Free Thai video lessons and printable worksheets for travelers and beginners.","publisher":{"@type":"Organization","name":"Speak Thai Today","url":"https://www.youtube.com/@SpeakThaiToday"}}
+</script>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="#" class="logo">🇹🇭 Speak Thai Today</a>
-            <ul class="nav-links">
-                <li><a href="#episodes">Lessons</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#youtube" class="cta-button" style="color: white; background: var(--accent-gold); margin: 0;">Subscribe</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav><div class="wrap">
+  <a class="logo" href="./"><b>SPEAK THAI TODAY</b></a>
+  <div class="links"><a class="hide-m" href="#episodes">Lessons</a><a class="hide-m" href="#worksheets">Worksheets</a><a class="hide-m" href="#about">About</a><a class="btn btn-red btn-sm" href="https://www.youtube.com/@SpeakThaiToday?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a></div>
+</div></nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Learn Thai Like a Local 🗣️</h1>
-            <p>Master real Thai phrases for travel, business, and everyday conversation</p>
-            <p class="subtitle">New videos every week on our YouTube channel</p>
-            <a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" class="cta-button">
-                ▶️ Subscribe on YouTube
-            </a>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Latest Episodes Section -->
-        <section id="episodes">
-            <div class="section-subtitle">Latest Content</div>
-            <h2 class="section-title">Featured Lessons</h2>
-
-            <div class="episodes">
-                <!-- EP.01 - LIVE -->
-                <article class="episode-card">
-                    <div class="episode-thumbnail">
-                        <img src="episodes/ep01/thumbnail.png" alt="5 Thai Phrases That Will Change Your Trip to Thailand">
-                    </div>
-                    <div class="episode-content">
-                        <div class="episode-number">EP.01</div>
-                        <h3 class="episode-title">5 Thai Phrases That Will Change Your Trip to Thailand</h3>
-                        <p class="episode-description">Master 5 essential Thai phrases that will transform your trip to Thailand! Learn how to order food, greet locals, and navigate daily situations like a pro. Perfect for first-time visitors and travel enthusiasts.</p>
-                        <div class="episode-meta">
-                            <span>⏱️ 6:40</span>
-                            <span>📅 Sept 5, 2026</span>
-                        </div>
-                        <a href="episodes/ep01/" target="_blank" class="episode-link">View Details →</a>
-                        <a href="https://www.youtube.com/watch?v=nlVfTQ67GAs" target="_blank" class="episode-link" style="margin-left: 1rem;">Watch on YouTube →</a>
-                    </div>
-                </article>
-
-                <!-- EP.02 -->
-                <article class="episode-card">
-                    <a href="episodes/ep02/"><img class="episode-thumbnail" src="episodes/ep02/thumbnail.jpg" alt="4 Questions Every 7-Eleven Cashier Asks in Thailand - EP02 thumbnail" loading="lazy" style="object-fit:cover;padding:0"></a>
-                    <div class="episode-content">
-                        <div class="episode-number">EP.02</div>
-                        <h3 class="episode-title">4 Questions Every 7-Eleven Cashier Asks in Thailand</h3>
-                        <p class="episode-description">Never freeze at the counter again. Learn the 4 questions every 7-Eleven cashier asks, the yes / no formula, and how to understand the price — with a free printable worksheet.</p>
-                        <div class="episode-meta">
-                            <span>⏱ 5:08</span><span>📄 Free worksheet</span>
-                        </div>
-                        <a href="episodes/ep02/" class="episode-link">Lesson + Free Worksheet →</a>
-                    </div>
-                </article>
-
-                <!-- EP.03 - COMING SOON -->
-                <article class="episode-card">
-                    <div class="episode-thumbnail">🐕</div>
-                    <div class="episode-content">
-                        <div class="episode-number">EP.03</div>
-                        <h3 class="episode-title">5 Thai Words That Get Foreigners Laughed At</h3>
-                        <p class="episode-description">มา, หมา or ม้า? Learn the Thai tone traps that turn "come here" into "dog" — and how to say them right.</p>
-                        <div class="episode-meta">
-                            <span>Coming Soon</span>
-                        </div>
-                        <a href="#" class="episode-link" style="color: var(--text-secondary); cursor: not-allowed;">Coming Soon →</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <h2>About Speak Thai Today</h2>
-            <p>We believe that learning Thai should be <strong>fun, practical, and connected to real Thai culture</strong>. Whether you're planning a trip to Thailand, working with Thai colleagues, or just curious about the language, we're here to help you speak Thai with confidence.</p>
-
-            <div class="features">
-                <div class="feature">
-                    <div class="feature-icon">✨</div>
-                    <div class="feature-text">
-                        <h3>Real-World Thai</h3>
-                        <p>Learn phrases and lessons you can actually use in Thailand.</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🎯</div>
-                    <div class="feature-text">
-                        <h3>Easy to Understand</h3>
-                        <p>Clear explanations and cultural insights for every lesson.</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">📱</div>
-                    <div class="feature-text">
-                        <h3>Weekly Updates</h3>
-                        <p>New videos every week to keep you learning and motivated.</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🎬</div>
-                    <div class="feature-text">
-                        <h3>Engaging Videos</h3>
-                        <p>Watch and learn at your own pace with our YouTube channel.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section id="youtube" class="cta-section">
-            <h2>Ready to Speak Thai Today?</h2>
-            <p>Join thousands of learners who are discovering the joy of speaking Thai</p>
-            <a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" class="cta-button" style="background: white; color: var(--accent-primary);">
-                ▶️ Subscribe Now
-            </a>
-        </section>
+<header class="hero"><div class="wrap grid">
+  <div>
+    <span class="pill">NEW LESSON EVERY WEEK</span>
+    <h1>Learn Thai <em>like a local</em> — one real situation at a time</h1>
+    <p class="lead">Short, fun video lessons from a native Thai teacher. Real phrases for markets, 7-Eleven, taxis and Thai friends — plus a free printable worksheet with every lesson.</p>
+    <div class="cta">
+      <a class="btn btn-red" href="episodes/ep02/">▶ Start the newest lesson</a>
+      <a class="btn btn-white" href="#episodes">See all lessons</a>
     </div>
+    <div class="meta"><span>🎯 Beginner friendly</span><span>🇹🇭 Native Thai teacher</span><span>📄 Free worksheets</span><span>✅ No sign-up</span></div>
+  </div>
+  <div class="stack">
+    <a class="video" href="episodes/ep02/" style="display:block" aria-label="EP02 — 4 Questions Every 7-Eleven Cashier Asks">
+      <img src="episodes/ep02/thumbnail.jpg" alt="Speak Thai Today EP02 — 4 Questions Every 7-Eleven Cashier Asks in Thailand" width="1280" height="720">
+      <span class="play"><span></span></span>
+    </a>
+  </div>
+</div></header>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://www.youtube.com/@SpeakThaiToday" target="_blank">YouTube</a>
-                <a href="https://www.youtube.com/@CognitiveCanvas" target="_blank">Cognitive Canvas</a>
-                <a href="https://www.amazon.com/s?k=thai+language" target="_blank">Thai Books on Amazon</a>
-            </div>
-            <p class="footer-text">© 2026 Speak Thai Today. Made with ❤️ for Thai language learners everywhere.</p>
-        </div>
-    </footer>
+<main>
+<section id="episodes"><div class="wrap">
+  <h2>Lessons</h2>
+  <p class="sub">Watch the video, learn the phrases, practice with the worksheet.</p>
+  <div class="lessons">
+    <a class="lesson" href="episodes/ep02/">
+      <div class="thumb"><img src="episodes/ep02/thumbnail.jpg" alt="EP02 thumbnail — 7-Eleven Thai" loading="lazy" width="1280" height="720"></div>
+      <div class="body">
+        <span class="ep-no">EP02 · NEW</span>
+        <h3>4 Questions Every 7-Eleven Cashier Asks in Thailand</h3>
+        <p>Never freeze at the counter again — the 4 questions, the yes / no formula and the price.</p>
+        <div class="info"><span>⏱ 5:08</span><span>📄 Free worksheet</span></div>
+        <span class="go">Start lesson →</span>
+      </div>
+    </a>
+    <a class="lesson" href="episodes/ep01/">
+      <div class="thumb"><img src="episodes/ep01/thumbnail.jpg" alt="EP01 thumbnail — 5 Thai Phrases" loading="lazy" width="1280" height="720"></div>
+      <div class="body">
+        <span class="ep-no">EP01</span>
+        <h3>5 Thai Phrases That Will Change Your Trip to Thailand</h3>
+        <p>Hello, thank you, how much, delicious and the famous mai pen rai.</p>
+        <div class="info"><span>⏱ 6:40</span><span>🎯 Beginner</span></div>
+        <span class="go">Start lesson →</span>
+      </div>
+    </a>
+    <div class="lesson soon">
+      <div class="thumb">🐕</div>
+      <div class="body">
+        <span class="ep-no">EP03 · COMING SOON</span>
+        <h3>5 Thai Words That Get Foreigners Laughed At</h3>
+        <p><span class="th">มา, หมา</span> or <span class="th">ม้า</span>? The tone traps that turn "come here" into "dog".</p>
+        <div class="info"><span>🔔 Subscribe to get notified</span></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="worksheets"><div class="wrap">
+  <div class="ws ws-compact">
+    <img src="episodes/ep02/worksheet-preview.jpg" alt="Free Thai worksheet preview — Speak Thai Today EP02" loading="lazy" width="794" height="1122">
+    <div>
+      <span class="free">FREE · NO SIGN-UP</span>
+      <h2 style="margin-top:12px">Free printable worksheets</h2>
+      <p>Every lesson comes with a worksheet you can print or use on your tablet:</p>
+      <ul>
+        <li><b>Learn:</b> every phrase with Thai script + easy pronunciation</li>
+        <li><b>Practice:</b> matching, fill-in and real-life dialogues</li>
+        <li><b>Pocket card:</b> cut it out and take it to Thailand</li>
+        <li>Answer key included</li>
+      </ul>
+      <a class="btn btn-red" href="episodes/ep02/speak-thai-today-ep02-7-eleven-worksheet.pdf" download>⬇ Newest worksheet (EP02 PDF)</a>
+    </div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <h2>Why learn with Speak Thai Today?</h2>
+  <p class="sub">Learning Thai should be <b>fun, practical and connected to real Thai culture</b> — whether you're visiting, living here, or have Thai friends and family. <span class="hello">สวัสดีค่ะ!</span></p>
+  <div class="feats">
+    <div class="feat"><div class="ico">✨</div><h3>Real-World Thai</h3><p>Phrases you'll actually hear and use in Thailand.</p></div>
+    <div class="feat"><div class="ico">🎯</div><h3>Easy to Understand</h3><p>Clear explanations and cultural tips in every lesson.</p></div>
+    <div class="feat"><div class="ico">📅</div><h3>Weekly Lessons</h3><p>A new video every week to keep you learning.</p></div>
+    <div class="feat"><div class="ico">🎬</div><h3>Fun Videos</h3><p>Learn at your own pace on our YouTube channel.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sublock">
+    <div><h2>Ready to speak Thai today?</h2><p style="margin:0;opacity:.9">Subscribe for a new Thai lesson every week — each one with a free worksheet.</p></div>
+    <a class="btn btn-yel" href="https://www.youtube.com/@SpeakThaiToday?sub_confirmation=1" target="_blank" rel="noopener">🔔 Subscribe on YouTube</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="flinks"><a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" rel="noopener">YouTube</a><a href="https://www.youtube.com/@CognitiveCanvas" target="_blank" rel="noopener">Cognitive Canvas</a><a href="https://www.amazon.com/s?k=thai+language" target="_blank" rel="noopener">Thai Books on Amazon</a></div>
+  © 2026 Speak Thai Today · Made with ❤️ for Thai learners everywhere
+</div></footer>
 </body>
 </html>
