@@ -34,70 +34,7 @@
   {"@type":"Question","name":"How do you say yes and no in Thai?","acceptedAnswer":{"@type":"Answer","text":"Repeat the verb from the question for yes (รับค่ะ, อุ่นค่ะ, มีค่ะ). Put ไม่ (mâi) in front for no (ไม่รับค่ะ, ไม่อุ่นค่ะ, ไม่มีค่ะ)."}}]}
 ]}
 </script>
-<style>
-:root{--navy:#1C355E;--red:#C81E32;--yel:#FDD835;--mint:#E6F0EC;--ink:#222;--green:#2E9E5B;--muted:#5F6B7A;--card:#fff;--radius:22px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:Poppins,Kanit,system-ui,sans-serif;color:var(--ink);background:var(--mint);line-height:1.6}
-.th{font-family:Kanit,sans-serif}
-a{color:inherit}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:2px solid var(--ink)}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;color:var(--navy)}
-.logo b{background:var(--yel);border:2.5px solid var(--ink);border-radius:999px;padding:4px 12px;font-size:14px;color:var(--ink)}
-nav .links{display:flex;gap:18px;align-items:center;font-weight:600;font-size:15px}
-nav .links a{text-decoration:none}
-.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;border:3px solid var(--ink);border-radius:999px;padding:12px 24px;box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s;cursor:pointer;font-family:inherit;font-size:16px}
-.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
-.btn-red{background:var(--red);color:#fff}.btn-yel{background:var(--yel);color:var(--ink)}.btn-white{background:#fff;color:var(--ink)}
-.btn-sm{padding:8px 16px;font-size:14px;box-shadow:3px 3px 0 var(--ink)}
-header.hero{padding:56px 0 40px}
-.hero .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
-.crumbs{font-size:14px;color:var(--muted);margin-bottom:14px}.crumbs a{text-decoration:none}
-.pill{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:13px;letter-spacing:.06em;border:2.5px solid var(--ink);border-radius:999px;padding:4px 14px}
-h1{font-size:clamp(32px,4.6vw,52px);line-height:1.08;margin:14px 0 14px;color:var(--navy);font-weight:800}
-h1 em{font-style:normal;color:var(--red)}
-.lead{font-size:18px;color:#3a4350;margin:0 0 26px}
-.cta{display:flex;flex-wrap:wrap;gap:14px}
-.meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;font-size:14px;color:var(--muted);font-weight:600}
-.video{position:relative;border:3px solid var(--ink);border-radius:var(--radius);overflow:hidden;box-shadow:8px 8px 0 var(--ink);background:#000;aspect-ratio:16/9}
-.video img,.video iframe{width:100%;height:100%;display:block;object-fit:cover;border:0}
-.video .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-decoration:none}
-.video .play span{width:84px;height:84px;border-radius:50%;background:var(--red);border:3px solid #fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.35)}
-.video .play span:after{content:"";border-left:26px solid #fff;border-top:16px solid transparent;border-bottom:16px solid transparent;margin-left:6px}
-section{padding:48px 0}
-h2{font-size:clamp(26px,3.2vw,36px);color:var(--navy);margin:0 0 8px;font-weight:800}
-.sub{color:var(--muted);margin:0 0 28px}
-.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.card{background:var(--card);border:3px solid var(--ink);border-radius:var(--radius);padding:24px 24px 20px;box-shadow:5px 5px 0 var(--ink)}
-.num{display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;background:var(--yel);border:2.5px solid var(--ink);border-radius:12px;font-weight:800;margin-right:10px}
-.q{font-family:Kanit;font-weight:700;color:var(--red);font-size:34px;line-height:1.2;margin:14px 0 2px}
-.rom{color:var(--navy);font-weight:600}
-.mean{color:var(--muted);margin:4px 0 14px}
-.ans{display:flex;gap:10px;flex-wrap:wrap;border-top:2px dashed #ccc;padding-top:14px}
-.tag{border-radius:14px;padding:6px 12px;font-size:15px;border:2px solid var(--ink);font-family:Kanit}
-.yes{background:#E1F5E4}.no{background:#FCE4E6}
-.tag b{font-family:Poppins;font-size:12px;margin-right:6px}
-.formula{background:var(--yel);border:3px solid var(--ink);border-radius:var(--radius);padding:26px;box-shadow:5px 5px 0 var(--ink);display:grid;gap:14px}
-.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-weight:700;font-size:20px}
-.chip{background:#fff;border:2.5px solid var(--ink);border-radius:12px;padding:4px 14px;font-family:Kanit}
-.lab{color:#fff;border-radius:12px;padding:4px 14px;border:2.5px solid var(--ink)}
-.tip{background:#fff;border:3px solid var(--ink);border-left:12px solid var(--red);border-radius:16px;padding:16px 20px;margin-top:22px}
-.ws{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:#fff;border:3px solid var(--ink);border-radius:28px;padding:34px;box-shadow:8px 8px 0 var(--ink)}
-.ws img{width:100%;border:3px solid var(--ink);border-radius:10px;box-shadow:6px 6px 0 rgba(0,0,0,.15);transform:rotate(-2deg);background:#fff}
-.ws ul{padding-left:20px;margin:14px 0 24px}.ws li{margin:6px 0}
-.free{display:inline-block;background:var(--green);color:#fff;font-weight:800;border-radius:10px;padding:2px 10px;font-size:14px}
-details{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:14px 18px;margin:12px 0;box-shadow:4px 4px 0 var(--ink)}
-summary{cursor:pointer;font-weight:700;font-size:18px}
-details p{margin:10px 0 0}
-.sublock{background:var(--navy);color:#fff;border-radius:28px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:24px;border:3px solid var(--ink)}
-.sublock h2{color:#fff}
-.eps{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.ep{display:flex;gap:14px;align-items:center;background:#fff;border:3px solid var(--ink);border-radius:18px;padding:14px;text-decoration:none;box-shadow:4px 4px 0 var(--ink)}
-.ep small{color:var(--muted);font-weight:600}
-footer{padding:36px 0;color:var(--muted);font-size:14px;text-align:center}
-@media (max-width:860px){.hero .grid,.ws,.eps{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.sublock{flex-direction:column;text-align:center}nav .links a.hide-m{display:none}}
-</style>
+<link rel="stylesheet" href="../../assets/style.css">
 </head>
 <body>
 <nav><div class="wrap">
@@ -113,13 +50,13 @@ footer{padding:36px 0;color:var(--muted);font-size:14px;text-align:center}
     <p class="lead">Never freeze at the counter again. Learn the 4 questions, the one formula for every yes / no answer — and grab the free printable worksheet.</p>
     <div class="cta">
       <a class="btn btn-red" href="speak-thai-today-ep02-7-eleven-worksheet.pdf" download>⬇ Free Worksheet (PDF)</a>
-      <a class="btn btn-white" id="watchBtn" href="https://www.youtube.com/@SpeakThaiToday" target="_blank" rel="noopener">▶ Watch on YouTube</a>
+      <a class="btn btn-white" id="watchBtn" href="https://www.youtube.com/watch?v=C_-7FKxfXQo" target="_blank" rel="noopener">▶ Watch on YouTube</a>
     </div>
     <div class="meta"><span>⏱ 5 min lesson</span><span>🎯 Beginner</span><span>📄 2-page worksheet</span><span>✅ No sign-up</span></div>
   </div>
   <div class="video" id="video">
     <img src="thumbnail.jpg" alt="4 Questions Every 7-Eleven Cashier Asks in Thailand — Speak Thai Today EP02 thumbnail" width="1280" height="720">
-    <a class="play" id="playLink" href="https://www.youtube.com/@SpeakThaiToday" target="_blank" rel="noopener" aria-label="Watch the lesson on YouTube"><span></span></a>
+    <a class="play" id="playLink" href="https://www.youtube.com/watch?v=C_-7FKxfXQo" target="_blank" rel="noopener" aria-label="Watch the lesson on YouTube"><span></span></a>
   </div>
 </div></header>
 
@@ -200,11 +137,11 @@ footer{padding:36px 0;color:var(--muted);font-size:14px;text-align:center}
 </div></section>
 </main>
 
-<footer><div class="wrap">© 2026 Speak Thai Today · Learn Thai the easy way · <a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" rel="noopener">YouTube</a></div></footer>
+<footer><div class="wrap"><div class="flinks"><a href="../../">Home</a><a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" rel="noopener">YouTube</a><a href="https://www.amazon.com/s?k=thai+language" target="_blank" rel="noopener">Thai Books on Amazon</a></div>© 2026 Speak Thai Today · Learn Thai the easy way · <a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" rel="noopener">YouTube</a></div></footer>
 
 <script>
 // After uploading to YouTube, paste the video ID here (the part after watch?v=) and re-upload this file.
-const VIDEO_ID = "";
+const VIDEO_ID = "C_-7FKxfXQo";
 if (VIDEO_ID) {
   document.getElementById('video').innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + VIDEO_ID + '" title="Speak Thai Today EP02" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
   document.getElementById('watchBtn').href = 'https://www.youtube.com/watch?v=' + VIDEO_ID;

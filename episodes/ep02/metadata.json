@@ -3,20 +3,52 @@
   "title": "4 Questions Every 7-Eleven Cashier Asks You in Thailand (Easy Thai)",
   "series": "Alex's First Month in Thailand",
   "description": "Learn the 4 Thai questions every 7-Eleven cashier in Thailand asks, the yes/no formula, and how to understand the price. Free printable worksheet.",
-  "publish_date": "",
+  "publish_date": "2026-10-23",
   "duration_seconds": 308,
   "duration_formatted": "5:08",
-  "youtube_url": "",
+  "youtube_url": "https://www.youtube.com/watch?v=C_-7FKxfXQo",
   "worksheet": "speak-thai-today-ep02-7-eleven-worksheet.pdf",
   "thumbnail": "thumbnail.jpg",
   "channel": "Speak Thai Today",
   "category": "Thai for Travelers",
-  "tags": ["learn thai", "thai phrases", "7-eleven thailand", "thai for travelers", "thai for beginners", "speak thai"],
+  "tags": [
+    "learn thai",
+    "thai phrases",
+    "7-eleven thailand",
+    "thai for travelers",
+    "thai for beginners",
+    "speak thai"
+  ],
   "phrases_taught": [
-    {"english": "Do you want a bag?", "thai": "รับถุงไหมคะ", "romanized": "ráp thǔng mǎi khá", "timing": "0:33"},
-    {"english": "Heat it up?", "thai": "อุ่นไหมคะ", "romanized": "ùn mǎi khá", "timing": "1:21"},
-    {"english": "Do you want a straw / spoon?", "thai": "รับหลอด / ช้อนไหมคะ", "romanized": "ráp lòot / cháwn mǎi khá", "timing": "1:56"},
-    {"english": "Do you have a membership?", "thai": "มีสมาชิกไหมคะ", "romanized": "mii sà-maa-chík mǎi khá", "timing": "2:27"},
-    {"english": "The total is ... baht", "thai": "ทั้งหมด ... บาทค่ะ", "romanized": "tháng-mòt ... bàat khâ", "timing": "2:59"}
+    {
+      "english": "Do you want a bag?",
+      "thai": "รับถุงไหมคะ",
+      "romanized": "ráp thǔng mǎi khá",
+      "timing": "0:33"
+    },
+    {
+      "english": "Heat it up?",
+      "thai": "อุ่นไหมคะ",
+      "romanized": "ùn mǎi khá",
+      "timing": "1:21"
+    },
+    {
+      "english": "Do you want a straw / spoon?",
+      "thai": "รับหลอด / ช้อนไหมคะ",
+      "romanized": "ráp lòot / cháwn mǎi khá",
+      "timing": "1:56"
+    },
+    {
+      "english": "Do you have a membership?",
+      "thai": "มีสมาชิกไหมคะ",
+      "romanized": "mii sà-maa-chík mǎi khá",
+      "timing": "2:27"
+    },
+    {
+      "english": "The total is ... baht",
+      "thai": "ทั้งหมด ... บาทค่ะ",
+      "romanized": "tháng-mòt ... bàat khâ",
+      "timing": "2:59"
+    }
   ]
 }
