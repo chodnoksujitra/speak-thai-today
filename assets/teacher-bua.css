@@ -1,0 +1,42 @@
+/* =========================================================
+   Learn Thai with Teacher Bua — book pages (/b1/, /b2/)
+   Loaded AFTER assets/style.css. Same menu, fonts and buttons;
+   the page looks like the book: white paper, black line art, red accent.
+   ========================================================= */
+body.tb{background:#fff}
+body.tb .th,body.tb td .th{font-family:Sarabun,Kanit,sans-serif;font-weight:600}
+body.tb header.hero{padding:44px 0 28px;border-bottom:2px solid var(--ink)}
+body.tb h1{color:var(--ink)}
+body.tb h1 em{color:var(--red)}
+body.tb h2{color:var(--ink)}
+body.tb .pill{background:var(--ink)}
+body.tb .meta span{border:2px solid var(--ink);border-radius:999px;padding:2px 12px;color:var(--ink);background:#fff}
+body.tb section{padding:36px 0}
+body.tb section+section{border-top:1px solid #e3e3e3}
+.tb-art{width:100%;height:auto;display:block;border:2px solid var(--ink);border-radius:14px;background:#fff}
+.tb-card{background:#fff;border:2px solid var(--ink);border-radius:16px;padding:20px 22px;box-shadow:4px 4px 0 var(--ink)}
+.tb-card h3{margin:0 0 8px;font-size:19px}
+.tb-card p{margin:0 0 8px;color:#3a4350}
+.tb-goals{margin:6px 0 0;padding-left:22px}.tb-goals li{margin:6px 0}
+.tb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tb-note{background:#FFF6C7;border:2px solid var(--ink);border-left:10px solid var(--red);border-radius:12px;padding:12px 16px;margin:12px 0 16px}
+.tb-soon{display:inline-block;font-size:13px;font-weight:700;border:2px dashed var(--ink);border-radius:999px;padding:1px 10px;color:var(--muted)}
+.tb-code{font-family:ui-monospace,Menlo,monospace;font-size:13px;font-weight:700;border:1.5px solid var(--ink);border-radius:6px;padding:1px 6px;white-space:nowrap;background:#fff}
+.tb-table{overflow-x:auto;border:2px solid var(--ink);border-radius:14px}
+.tb-table table{width:100%;border-collapse:collapse;font-size:15px}
+.tb-table th{background:var(--ink);color:#fff;text-align:left;padding:8px 12px;font-size:13px;letter-spacing:.04em}
+.tb-table td{padding:8px 12px;border-top:1px solid #e3e3e3;vertical-align:top}
+.tb-table tr:nth-child(even) td{background:#fafafa}
+.tb-play{width:38px;height:38px;border-radius:50%;border:2px solid var(--ink);background:#eee;color:#999;font-size:14px}
+.tb-ans{box-shadow:none;border-width:2px;padding:10px 16px;margin:8px 0}
+.tb-ans summary{font-size:16px}.tb-ans small{color:var(--muted);font-weight:600}
+.tb-ans p{font-size:16px}
+.tb-pn{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+body.tb .lessons .tb-lesson{box-shadow:4px 4px 0 var(--ink);border-width:2px}
+body.tb .lesson .ep-no{background:#fff}
+body.tb .lesson h3{color:var(--ink)}
+body.tb .sublock{background:var(--ink)}
+button[disabled]{cursor:not-allowed;opacity:.6}
+@media (max-width:860px){.tb-grid{grid-template-columns:1fr}.tb-table td,.tb-table th{padding:7px 8px;font-size:14px}}
+body.tb .sublock h2{color:#fff}
+.nw{white-space:nowrap}
