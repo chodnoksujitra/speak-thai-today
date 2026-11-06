@@ -40,3 +40,6 @@ button[disabled]{cursor:not-allowed;opacity:.6}
 @media (max-width:860px){.tb-grid{grid-template-columns:1fr}.tb-table td,.tb-table th{padding:7px 8px;font-size:14px}}
 body.tb .sublock h2{color:#fff}
 .nw{white-space:nowrap}
+
+.tb-play[data-src]{background:var(--red);color:#fff;cursor:pointer}
+.tb-play.on{background:var(--ink);color:#fff}
