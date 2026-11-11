@@ -1,5 +1,5 @@
 {
-  "episode": "EP01",
+  "episode": "Travel Thai #1",
   "title": "5 Thai Phrases That Will Change Your Trip to Thailand",
   "description": "Master 5 essential Thai phrases that will transform your trip to Thailand! Learn how to order food, greet locals, and navigate daily situations like a pro. Perfect for first-time visitors and travel enthusiasts.",
   "publish_date": "2026-09-05",
@@ -57,5 +57,6 @@
     "Apply phrases in real-world Thai situations"
   ],
   "target_audience": "Thai language beginners, travelers, first-time visitors to Thailand",
-  "status": "published"
+  "status": "published",
+  "series": "Travel Thai (Thai for Travelers)"
 }

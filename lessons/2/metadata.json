@@ -1,0 +1,66 @@
+{
+  "episode": "Lesson 2",
+  "series": "Thai From Zero",
+  "title": "Thai Tones for Beginners: 5 Words That All Sound Like \"My\"",
+  "description": "Learn to hear the 5 Thai tones with ไม้ ใหม่ ไม่ ไหม้ ไหม, say thank you (ขอบคุณครับ / ค่ะ), and read the tone from the romanization. Free printable worksheet.",
+  "publish_date": "2026-11-26",
+  "duration_seconds": 350,
+  "duration_formatted": "5:50",
+  "youtube_url": "",
+  "worksheet": "speak-thai-today-lesson-2-thai-tones-worksheet.pdf",
+  "thumbnail": "thumbnail.jpg",
+  "channel": "Speak Thai Today",
+  "category": "Thai From Zero",
+  "tags": [
+    "thai tones",
+    "learn thai",
+    "thai for beginners",
+    "thai pronunciation",
+    "thai tongue twister",
+    "speak thai"
+  ],
+  "phrases_taught": [
+    {
+      "english": "Thank you (men / women)",
+      "thai": "ขอบคุณครับ / ขอบคุณค่ะ",
+      "romanized": "khàwp khun khráp / khâ",
+      "timing": "0:25"
+    },
+    {
+      "english": "wood (high tone)",
+      "thai": "ไม้",
+      "romanized": "mái",
+      "timing": "1:57"
+    },
+    {
+      "english": "new (low tone)",
+      "thai": "ใหม่",
+      "romanized": "mài",
+      "timing": "1:57"
+    },
+    {
+      "english": "not / no (falling tone)",
+      "thai": "ไม่",
+      "romanized": "mâi",
+      "timing": "1:57"
+    },
+    {
+      "english": "burn (falling tone)",
+      "thai": "ไหม้",
+      "romanized": "mâi",
+      "timing": "1:57"
+    },
+    {
+      "english": "question word (rising tone)",
+      "thai": "ไหม",
+      "romanized": "mǎi",
+      "timing": "1:57"
+    },
+    {
+      "english": "New wood doesn't burn, does it? (tongue twister)",
+      "thai": "ไม้ใหม่ไม่ไหม้ไหม",
+      "romanized": "mái mài mâi mâi mǎi",
+      "timing": "4:29"
+    }
+  ]
+}

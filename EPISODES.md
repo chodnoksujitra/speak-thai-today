@@ -1,8 +1,10 @@
 # 📺 Episodes
 
+> 11 Nov 2026 (ต้อม): the two videos made before the books are now the **Travel Thai** series (#1, #2) and are not counted as EP01/EP02. EP numbers go to the Thai From Zero course: Lesson 1 Read Your First Thai Words (23 Nov), Lesson 2 5 Thai Tones (26 Nov, page /lessons/2/). URLs /episodes/ep01/ and /episodes/ep02/ stay the same (YouTube descriptions link to them).
+
 ## Episode List
 
-### EP01: 5 Thai Phrases That Will Change Your Trip to Thailand
+### Travel Thai #1: 5 Thai Phrases That Will Change Your Trip to Thailand
 - **Status**: ✅ Published
 - **Upload Date**: September 5, 2026
 - **YouTube Link**: [Watch on YouTube](https://www.youtube.com/watch?v=nlVfTQ67GAs)
@@ -23,7 +25,7 @@ Master 5 essential Thai phrases that will transform your trip to Thailand! Learn
 
 ---
 
-### EP02: 4 Questions Every 7-Eleven Cashier Asks You in Thailand (Easy Thai)
+### Travel Thai #2: 4 Questions Every 7-Eleven Cashier Asks You in Thailand (Easy Thai)
 - **Status**: ✅ Published
 - **Upload Date**: October 23, 2026
 - **Lesson Page**: [episodes/ep02/](https://chodnoksujitra.github.io/speak-thai-today/episodes/ep02/)
