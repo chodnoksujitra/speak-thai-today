@@ -1,6 +1,6 @@
 # 📺 Episodes
 
-> 11 Nov 2026 (ต้อม): the two videos made before the books are now the **Travel Thai** series (#1, #2) and are not counted as EP01/EP02. EP numbers go to the Thai From Zero course: Lesson 1 Read Your First Thai Words (23 Nov), Lesson 2 5 Thai Tones (26 Nov, page /lessons/2/). URLs /episodes/ep01/ and /episodes/ep02/ stay the same (YouTube descriptions link to them).
+> 11 Nov 2026 (ต้อม): the two videos made before the books are now the **Travel Thai** series (#1, #2) and are not counted as EP01/EP02. EP numbers go to the Thai From Zero course: Lesson 1 Read Your First Thai Words (11 Nov), Lesson 2 5 Thai Tones (18 Nov, page /lessons/2/). URLs /episodes/ep01/ and /episodes/ep02/ stay the same (YouTube descriptions link to them).
 
 ## Episode List
 
