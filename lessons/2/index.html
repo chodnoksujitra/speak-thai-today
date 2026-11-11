@@ -181,7 +181,7 @@ document.getElementById('tones').innerHTML = T.map(([nm, cp, d, g, w, r]) => {
   return `<div class="tone"><div class="nm">${nm}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${nm} tone line">${guides}<path d="M${pts.map((p) => p.map((v) => v.toFixed(1)).join(' ')).join(' L')}" fill="none" stroke="#C81E32" stroke-width="6" stroke-linecap="round"/><path d="M${x2.toFixed(1)} ${y2.toFixed(1)} L${ah(.5)} L${ah(-.5)} Z" fill="#C81E32"/></svg><div class="d">${d}</div><div class="g">${g}</div><div class="w">${w}</div><div class="r">${r}</div></div>`;
 }).join('');
 // After uploading to YouTube, paste the video ID here (the part after watch?v=) and re-upload this file.
-const VIDEO_ID = "";
+const VIDEO_ID = "3DxA1UPqpMs";
 if (VIDEO_ID) {
   document.getElementById('video').innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + VIDEO_ID + '" title="Speak Thai Today Lesson 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
   document.getElementById('watchBtn').href = 'https://www.youtube.com/watch?v=' + VIDEO_ID;
