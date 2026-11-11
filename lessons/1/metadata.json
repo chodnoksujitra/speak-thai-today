@@ -1,0 +1,102 @@
+{
+  "episode": "Lesson 1",
+  "series": "Thai From Zero",
+  "title": "Learn to Read Thai: Your First Thai Words in 7 Minutes",
+  "description": "Learn 4 Thai letters (ก ด ต ป) and 2 vowels (า ี), blend them, and read your first Thai words (กา ตา ดี). Say hello (สวัสดีครับ / ค่ะ). Free printable worksheet.",
+  "publish_date": "2026-11-12",
+  "duration_seconds": 421,
+  "duration_formatted": "7:01",
+  "youtube_url": "",
+  "worksheet": "speak-thai-today-lesson-1-read-thai-worksheet.pdf",
+  "thumbnail": "thumbnail.jpg",
+  "channel": "Speak Thai Today",
+  "category": "Thai From Zero",
+  "tags": [
+    "learn to read thai",
+    "thai alphabet",
+    "thai for beginners",
+    "thai letters",
+    "how to say hello in thai",
+    "speak thai"
+  ],
+  "phrases_taught": [
+    {
+      "english": "Hello (men / women)",
+      "thai": "สวัสดีครับ / สวัสดีค่ะ",
+      "romanized": "sà-wàt-dii khráp / khâ",
+      "timing": "0:25"
+    },
+    {
+      "english": "letter g (name: gor gài)",
+      "thai": "ก",
+      "romanized": "g",
+      "timing": "1:03"
+    },
+    {
+      "english": "letter d (name: dor dèk)",
+      "thai": "ด",
+      "romanized": "d",
+      "timing": "1:03"
+    },
+    {
+      "english": "letter dt (name: dtor dtào)",
+      "thai": "ต",
+      "romanized": "dt",
+      "timing": "1:03"
+    },
+    {
+      "english": "letter bp (name: bpor bplaa)",
+      "thai": "ป",
+      "romanized": "bp",
+      "timing": "1:03"
+    },
+    {
+      "english": "long vowel aa",
+      "thai": "า",
+      "romanized": "aa",
+      "timing": "2:18"
+    },
+    {
+      "english": "long vowel ii",
+      "thai": "ี",
+      "romanized": "ii",
+      "timing": "2:18"
+    },
+    {
+      "english": "crow",
+      "thai": "กา",
+      "romanized": "gaa",
+      "timing": "2:36"
+    },
+    {
+      "english": "good",
+      "thai": "ดี",
+      "romanized": "dii",
+      "timing": "2:36"
+    },
+    {
+      "english": "eye",
+      "thai": "ตา",
+      "romanized": "dtaa",
+      "timing": "3:04"
+    },
+    {
+      "english": "year",
+      "thai": "ปี",
+      "romanized": "bpii",
+      "timing": "3:04"
+    },
+    {
+      "english": "hit",
+      "thai": "ตี",
+      "romanized": "dtii",
+      "timing": "3:04"
+    },
+    {
+      "english": "throw",
+      "thai": "ปา",
+      "romanized": "bpaa",
+      "timing": "3:04"
+    }
+  ]
+}
