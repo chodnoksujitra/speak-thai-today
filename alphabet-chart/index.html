@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thai Alphabet Chart · Listen | Speak Thai Today</title>
+<meta name="description" content="Hear every letter, vowel, tone and number on the Thai Alphabet Chart posters by Teacher Bua.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233568B5'/%3E%3Ctext x='32' y='47' font-size='40' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3E%E0%B8%81%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/sarabun-700.woff2?v=2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:Sarabun;font-weight:700;font-display:swap;src:url(fonts/sarabun-700.woff2?v=2) format("woff2")}
+@font-face{font-family:Inter;font-weight:500;font-display:swap;src:url(fonts/inter-500.woff2?v=2) format("woff2")}
+@font-face{font-family:Inter;font-weight:800;font-display:swap;src:url(fonts/inter-800.woff2?v=2) format("woff2")}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:#FAF6EE;color:#1d1d1f;font:500 16px/1.45 Inter,Sarabun,system-ui,sans-serif;-webkit-text-size-adjust:100%}
+[lang=th]{font-family:Sarabun,Inter,sans-serif;font-weight:700}
+header{max-width:1180px;margin:0 auto;padding:22px 16px 6px}
+.brand{font:800 12px Inter;letter-spacing:.12em;color:#98610A;text-transform:uppercase;margin:0}
+h1{font:800 clamp(26px,5vw,40px)/1.15 Inter;margin:6px 0 4px}
+.lead{margin:0;color:#555;max-width:640px}.tip{display:block;font-size:14px;color:#666;margin-top:4px}
+.key{margin-top:12px;background:#fff;border-radius:12px;box-shadow:0 1px 3px #0000001a;max-width:760px}
+.key summary{cursor:pointer;font:800 15px Inter;padding:12px 14px;min-height:44px;box-sizing:border-box}
+.kg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:6px 18px;padding:0 14px 14px;font-size:15px}.kg b{margin-right:6px}
+nav{position:sticky;top:0;z-index:5;background:#FAF6EEee;backdrop-filter:blur(6px);border-bottom:1px solid #00000010}
+nav div{max-width:1180px;margin:0 auto;padding:10px 16px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+nav a{flex:none;text-decoration:none;color:#1d1d1f;font:800 14px Inter;padding:8px 14px;border-radius:999px;background:#fff;box-shadow:0 1px 3px #0000001a}
+nav a:focus-visible,button:focus-visible{outline:3px solid #98610A;outline-offset:2px}
+main{max-width:1180px;margin:0 auto;padding:0 16px 40px}
+section{padding-top:26px}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.no{margin:0;font:800 12px Inter;letter-spacing:.12em;text-transform:uppercase;color:#888}
+h2{margin:2px 0 4px;font:800 26px/1.2 Inter}h2 [lang=th]{font-size:24px;color:#98610A;margin-left:4px}
+.sub{margin:0;color:#555;max-width:660px}
+.pa{flex:none;border:0;border-radius:999px;background:#1d1d1f;color:#fff;font:800 15px Inter;padding:11px 18px;cursor:pointer;min-height:44px}
+.pa.on{background:#CF5A3C}
+.grid{display:grid;gap:10px}
+.g44{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.g28{grid-template-columns:repeat(4,minmax(0,1fr))}.g5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.g10{grid-template-columns:repeat(5,minmax(0,1fr))}.g6{grid-template-columns:repeat(6,minmax(0,1fr))}
+.card{all:unset;box-sizing:border-box;position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;cursor:pointer;
+ background:var(--bg);border:2px solid var(--c);border-radius:14px;padding:10px 8px 12px;box-shadow:inset 0 0 0 2px #ffffffb0,0 2px 5px rgba(60,40,10,.10);
+ transition:transform .12s,box-shadow .12s;-webkit-tap-highlight-color:transparent;min-width:0}
+.card:hover{transform:translateY(-2px)}.card:active{transform:scale(.97)}
+.card:focus-visible{outline:3px solid #1d1d1f;outline-offset:2px}
+.card.play{box-shadow:0 0 0 4px var(--c),0 6px 16px rgba(60,40,10,.25);transform:translateY(-2px)}
+.card.play::after{content:"♪ playing";position:absolute;top:-11px;right:8px;background:var(--c);color:#fff;font:800 11px Inter;padding:2px 8px;border-radius:999px}
+.card.err{border-style:dashed}.card.err::after{content:"can't play – tap again";position:absolute;top:-11px;right:8px;background:#555;color:#fff;font:800 11px Inter;padding:2px 8px;border-radius:999px}
+.card[disabled]{cursor:default;opacity:.75}.card[disabled]:hover{transform:none}
+.tag{align-self:flex-start;font:800 11px Inter;letter-spacing:.04em;color:var(--c)}
+.big{font-size:64px;line-height:1.05;color:var(--c);margin-top:-2px}
+.pic{width:76px;height:76px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;margin:2px 0 6px}
+.pic img{width:88%;height:88%;object-fit:contain}
+.nm{font-size:19px;line-height:1.3}.rd{font:800 15px Inter;margin-top:1px}.mn{font-size:13px;color:#555;margin-top:1px}
+.vf{font-size:46px;line-height:1;margin:6px 0 2px}.vsvg{display:block;overflow:visible}.snd{font:800 20px Inter;color:var(--c);margin-bottom:6px}
+.ct{width:84px;height:55px;margin:4px 0 2px;overflow:visible}.tw{font-size:44px;line-height:1.3}
+.tn{font-size:12px;color:#666;margin-top:6px}.tn [lang=th]{font-weight:700}
+.dg{font-size:62px;line-height:1.1;color:var(--c)}.dg2{font-size:40px;line-height:1.2;color:var(--c);margin:4px 0}
+.dg2.long{font-size:30px;line-height:1.6;white-space:nowrap}
+.star{color:#CF5A3C;margin-left:2px}.soon{margin-top:6px;font:800 11px Inter;color:#666;background:#fff;border-radius:999px;padding:3px 8px}
+.h3{font:800 18px Inter;margin:22px 0 10px}.hint{display:block;background:#fff;border-left:4px solid #98610A;border-radius:6px;padding:6px 10px;margin:4px 0 6px;color:#1d1d1f;font-weight:500}
+.note{color:#555;font-size:14px;margin:10px 0 0}
+.msg{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);background:#1d1d1f;color:#fff;padding:10px 16px;border-radius:12px;font:500 14px Inter;display:none;max-width:calc(100% - 32px);z-index:9}
+footer{max-width:1180px;margin:0 auto;padding:18px 16px 32px;color:#666;font-size:13px;border-top:1px solid #00000012;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+footer a{color:#3568B5}
+@media (max-width:900px){.g28{grid-template-columns:repeat(2,minmax(0,1fr))}.g5{grid-template-columns:repeat(3,minmax(0,1fr))}.g6{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:480px){nav div{gap:6px}nav a{padding:8px 10px;font-size:13px}.nn{display:none}}
+@media (max-width:560px){.g44{grid-template-columns:repeat(2,minmax(0,1fr))}.g10{grid-template-columns:repeat(3,minmax(0,1fr))}.g5{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .big{font-size:58px}.vf{font-size:40px}.tw{font-size:38px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}</style></head>
+<body>
+<header><p class="brand">Speak Thai Today · Teacher Bua</p>
+<h1>Thai Alphabet Chart · Listen</h1>
+<p class="lead">Tap any card on this page to hear it. Use <b>Play all</b> to listen to a whole chart. <span class="tip">No sound on iPhone? Turn off silent mode and turn the volume up.</span></p><details class="key"><summary>How to read the sounds (Sound Key)</summary><div class="kg"><span><b>ɔɔ</b> aw in saw</span><span><b>ɛ</b> a in cat</span><span><b>ʉ</b> oo, smiling</span><span><b>ə</b> u in fur</span><span><b>bp / dt</b> p / t, no puff</span><span><b>aa</b> double letter = long vowel</span><span><b>a</b> mid · <b>à</b> low · <b>â</b> fall · <b>á</b> high · <b>ǎ</b> rise</span><span><b>MID · HIGH · LOW</b> consonant class – it decides the tone (Chart 3)</span></div></details></header>
+<nav aria-label="Charts"><div><a href="#consonants"><span class="nn">1 </span>Consonants</a><a href="#vowels"><span class="nn">2 </span>Vowels</a><a href="#tones"><span class="nn">3 </span>Tones</a><a href="#numbers"><span class="nn">4 </span>Numbers</a></div></nav>
+<main><section id="consonants" aria-labelledby="h-consonants">
+<div class="sh"><div><p class="no">Chart 1</p><h2 id="h-consonants">Consonants <span lang="th">พยัญชนะ</span></h2><p class="sub">Tap a letter to hear its name. The colour shows its class: <b style="color:#3568B5">MID</b> · <b style="color:#CF5A3C">HIGH</b> · <b style="color:#2C8460">LOW</b>.</p></div>
+<button class="pa" data-sec="consonants" type="button"><span class="ic">▶</span> <span class="lb">Play all</span></button></div>
+<div class="grid g44"><button class="card cc" style="--c:#3568B5;--bg:#ECF2FB" data-a="c01" aria-label="1. gɔɔ gài – chicken">
+<span class="tag">1 · MID</span>
+<span class="big" lang="th">ก</span>
+<span class="pic"><img src="img/01-ko-kai.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ก ไก่</span>
+<span class="rd">gɔɔ gài</span>
+<span class="mn">chicken</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c02" aria-label="2. kɔ̌ɔ kài – egg">
+<span class="tag">2 · HIGH</span>
+<span class="big" lang="th">ข</span>
+<span class="pic"><img src="img/02-kho-khai.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ข ไข่</span>
+<span class="rd">kɔ̌ɔ kài</span>
+<span class="mn">egg</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c03" aria-label="3. kɔ̌ɔ kùat – bottle">
+<span class="tag">3 · HIGH</span>
+<span class="big" lang="th">ฃ</span>
+<span class="pic"><img src="img/03-kho-khuat.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฃ ขวด</span>
+<span class="rd">kɔ̌ɔ kùat</span>
+<span class="mn">bottle</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c04" aria-label="4. kɔɔ kwaai – buffalo">
+<span class="tag">4 · LOW</span>
+<span class="big" lang="th">ค</span>
+<span class="pic"><img src="img/04-kho-khwai.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ค ควาย</span>
+<span class="rd">kɔɔ kwaai</span>
+<span class="mn">buffalo</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c05" aria-label="5. kɔɔ kon – person">
+<span class="tag">5 · LOW</span>
+<span class="big" lang="th">ฅ</span>
+<span class="pic"><img src="img/05-kho-khon.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฅ คน</span>
+<span class="rd">kɔɔ kon</span>
+<span class="mn">person</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c06" aria-label="6. kɔɔ rá-kang – bell">
+<span class="tag">6 · LOW</span>
+<span class="big" lang="th">ฆ</span>
+<span class="pic"><img src="img/06-kho-rakhang.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฆ ระฆัง</span>
+<span class="rd">kɔɔ rá-kang</span>
+<span class="mn">bell</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c07" aria-label="7. ngɔɔ nguu – snake">
+<span class="tag">7 · LOW</span>
+<span class="big" lang="th">ง</span>
+<span class="pic"><img src="img/07-ngo-ngu.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ง งู</span>
+<span class="rd">ngɔɔ nguu</span>
+<span class="mn">snake</span></button><button class="card cc" style="--c:#3568B5;--bg:#ECF2FB" data-a="c08" aria-label="8. jɔɔ jaan – plate">
+<span class="tag">8 · MID</span>
+<span class="big" lang="th">จ</span>
+<span class="pic"><img src="img/08-jo-jan.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">จ จาน</span>
+<span class="rd">jɔɔ jaan</span>
+<span class="mn">plate</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c09" aria-label="9. chɔ̌ɔ chìng – small cymbals">
+<span class="tag">9 · HIGH</span>
+<span class="big" lang="th">ฉ</span>
+<span class="pic"><img src="img/09-cho-ching.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฉ ฉิ่ง</span>
+<span class="rd">chɔ̌ɔ chìng</span>
+<span class="mn">small cymbals</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c10" aria-label="10. chɔɔ cháang – elephant">
+<span class="tag">10 · LOW</span>
+<span class="big" lang="th">ช</span>
+<span class="pic"><img src="img/10-cho-chang.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ช ช้าง</span>
+<span class="rd">chɔɔ cháang</span>
+<span class="mn">elephant</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c11" aria-label="11. sɔɔ sôo – chain">
+<span class="tag">11 · LOW</span>
+<span class="big" lang="th">ซ</span>
+<span class="pic"><img src="img/11-so-so.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ซ โซ่</span>
+<span class="rd">sɔɔ sôo</span>
+<span class="mn">chain</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c12" aria-label="12. chɔɔ chəə – tree">
+<span class="tag">12 · LOW</span>
+<span class="big" lang="th">ฌ</span>
+<span class="pic"><img src="img/12-cho-choe.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฌ เฌอ</span>
+<span class="rd">chɔɔ chəə</span>
+<span class="mn">tree</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c13" aria-label="13. yɔɔ yǐng – woman">
+<span class="tag">13 · LOW</span>
+<span class="big" lang="th">ญ</span>
+<span class="pic"><img src="img/13-yo-ying.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ญ หญิง</span>
+<span class="rd">yɔɔ yǐng</span>
+<span class="mn">woman</span></button><button class="card cc" style="--c:#3568B5;--bg:#ECF2FB" data-a="c14" aria-label="14. dɔɔ chá-daa – headdress">
+<span class="tag">14 · MID</span>
+<span class="big" lang="th">ฎ</span>
+<span class="pic"><img src="img/14-do-chada.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฎ ชฎา</span>
+<span class="rd">dɔɔ chá-daa</span>
+<span class="mn">headdress</span></button><button class="card cc" style="--c:#3568B5;--bg:#ECF2FB" data-a="c15" aria-label="15. dtɔɔ bpà-dtàk – goad (spear)">
+<span class="tag">15 · MID</span>
+<span class="big" lang="th">ฏ</span>
+<span class="pic"><img src="img/15-to-patak.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฏ ปฏัก</span>
+<span class="rd">dtɔɔ bpà-dtàk</span>
+<span class="mn">goad (spear)</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c16" aria-label="16. tɔ̌ɔ tǎan – pedestal">
+<span class="tag">16 · HIGH</span>
+<span class="big" lang="th">ฐ</span>
+<span class="pic"><img src="img/16-tho-than.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฐ ฐาน</span>
+<span class="rd">tɔ̌ɔ tǎan</span>
+<span class="mn">pedestal</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c17" aria-label="17. tɔɔ mon-too – Queen Montho">
+<span class="tag">17 · LOW</span>
+<span class="big" lang="th">ฑ</span>
+<span class="pic"><img src="img/17-tho-montho.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฑ มณโฑ</span>
+<span class="rd">tɔɔ mon-too</span>
+<span class="mn">Queen Montho</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c18" aria-label="18. tɔɔ pûu-tâo – old man">
+<span class="tag">18 · LOW</span>
+<span class="big" lang="th">ฒ</span>
+<span class="pic"><img src="img/18-tho-phuthao.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฒ ผู้เฒ่า</span>
+<span class="rd">tɔɔ pûu-tâo</span>
+<span class="mn">old man</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c19" aria-label="19. nɔɔ neen – novice monk">
+<span class="tag">19 · LOW</span>
+<span class="big" lang="th">ณ</span>
+<span class="pic"><img src="img/19-no-nen.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ณ เณร</span>
+<span class="rd">nɔɔ neen</span>
+<span class="mn">novice monk</span></button><button class="card cc" style="--c:#3568B5;--bg:#ECF2FB" data-a="c20" aria-label="20. dɔɔ dèk – child">
+<span class="tag">20 · MID</span>
+<span class="big" lang="th">ด</span>
+<span class="pic"><img src="img/20-do-dek.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ด เด็ก</span>
+<span class="rd">dɔɔ dèk</span>
+<span class="mn">child</span></button><button class="card cc" style="--c:#3568B5;--bg:#ECF2FB" data-a="c21" aria-label="21. dtɔɔ dtào – turtle">
+<span class="tag">21 · MID</span>
+<span class="big" lang="th">ต</span>
+<span class="pic"><img src="img/21-to-tao.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ต เต่า</span>
+<span class="rd">dtɔɔ dtào</span>
+<span class="mn">turtle</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c22" aria-label="22. tɔ̌ɔ tǔng – bag">
+<span class="tag">22 · HIGH</span>
+<span class="big" lang="th">ถ</span>
+<span class="pic"><img src="img/22-tho-thung.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ถ ถุง</span>
+<span class="rd">tɔ̌ɔ tǔng</span>
+<span class="mn">bag</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c23" aria-label="23. tɔɔ tá-hǎan – soldier">
+<span class="tag">23 · LOW</span>
+<span class="big" lang="th">ท</span>
+<span class="pic"><img src="img/23-tho-thahan.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ท ทหาร</span>
+<span class="rd">tɔɔ tá-hǎan</span>
+<span class="mn">soldier</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c24" aria-label="24. tɔɔ tong – flag">
+<span class="tag">24 · LOW</span>
+<span class="big" lang="th">ธ</span>
+<span class="pic"><img src="img/24-tho-thong.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ธ ธง</span>
+<span class="rd">tɔɔ tong</span>
+<span class="mn">flag</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c25" aria-label="25. nɔɔ nǔu – mouse">
+<span class="tag">25 · LOW</span>
+<span class="big" lang="th">น</span>
+<span class="pic"><img src="img/25-no-nu.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">น หนู</span>
+<span class="rd">nɔɔ nǔu</span>
+<span class="mn">mouse</span></button><button class="card cc" style="--c:#3568B5;--bg:#ECF2FB" data-a="c26" aria-label="26. bɔɔ bai-máai – leaf">
+<span class="tag">26 · MID</span>
+<span class="big" lang="th">บ</span>
+<span class="pic"><img src="img/26-bo-baimai.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">บ ใบไม้</span>
+<span class="rd">bɔɔ bai-máai</span>
+<span class="mn">leaf</span></button><button class="card cc" style="--c:#3568B5;--bg:#ECF2FB" data-a="c27" aria-label="27. bpɔɔ bplaa – fish">
+<span class="tag">27 · MID</span>
+<span class="big" lang="th">ป</span>
+<span class="pic"><img src="img/27-po-pla.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ป ปลา</span>
+<span class="rd">bpɔɔ bplaa</span>
+<span class="mn">fish</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c28" aria-label="28. pɔ̌ɔ pʉ̂ng – bee">
+<span class="tag">28 · HIGH</span>
+<span class="big" lang="th">ผ</span>
+<span class="pic"><img src="img/28-pho-phueng.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ผ ผึ้ง</span>
+<span class="rd">pɔ̌ɔ pʉ̂ng</span>
+<span class="mn">bee</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c29" aria-label="29. fɔ̌ɔ fǎa – lid">
+<span class="tag">29 · HIGH</span>
+<span class="big" lang="th">ฝ</span>
+<span class="pic"><img src="img/29-fo-fa.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฝ ฝา</span>
+<span class="rd">fɔ̌ɔ fǎa</span>
+<span class="mn">lid</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c30" aria-label="30. pɔɔ paan – pedestal tray">
+<span class="tag">30 · LOW</span>
+<span class="big" lang="th">พ</span>
+<span class="pic"><img src="img/30-pho-phan.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">พ พาน</span>
+<span class="rd">pɔɔ paan</span>
+<span class="mn">pedestal tray</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c31" aria-label="31. fɔɔ fan – tooth">
+<span class="tag">31 · LOW</span>
+<span class="big" lang="th">ฟ</span>
+<span class="pic"><img src="img/31-fo-fan.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฟ ฟัน</span>
+<span class="rd">fɔɔ fan</span>
+<span class="mn">tooth</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c32" aria-label="32. pɔɔ sǎm-pao – junk (ship)">
+<span class="tag">32 · LOW</span>
+<span class="big" lang="th">ภ</span>
+<span class="pic"><img src="img/32-pho-samphao.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ภ สำเภา</span>
+<span class="rd">pɔɔ sǎm-pao</span>
+<span class="mn">junk (ship)</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c33" aria-label="33. mɔɔ máa – horse">
+<span class="tag">33 · LOW</span>
+<span class="big" lang="th">ม</span>
+<span class="pic"><img src="img/33-mo-ma.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ม ม้า</span>
+<span class="rd">mɔɔ máa</span>
+<span class="mn">horse</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c34" aria-label="34. yɔɔ yák – giant">
+<span class="tag">34 · LOW</span>
+<span class="big" lang="th">ย</span>
+<span class="pic"><img src="img/34-yo-yak.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ย ยักษ์</span>
+<span class="rd">yɔɔ yák</span>
+<span class="mn">giant</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c35" aria-label="35. rɔɔ rʉa – boat">
+<span class="tag">35 · LOW</span>
+<span class="big" lang="th">ร</span>
+<span class="pic"><img src="img/35-ro-ruea.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ร เรือ</span>
+<span class="rd">rɔɔ rʉa</span>
+<span class="mn">boat</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c36" aria-label="36. lɔɔ ling – monkey">
+<span class="tag">36 · LOW</span>
+<span class="big" lang="th">ล</span>
+<span class="pic"><img src="img/36-lo-ling.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ล ลิง</span>
+<span class="rd">lɔɔ ling</span>
+<span class="mn">monkey</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c37" aria-label="37. wɔɔ wɛ̌ɛn – ring">
+<span class="tag">37 · LOW</span>
+<span class="big" lang="th">ว</span>
+<span class="pic"><img src="img/37-wo-waen.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ว แหวน</span>
+<span class="rd">wɔɔ wɛ̌ɛn</span>
+<span class="mn">ring</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c38" aria-label="38. sɔ̌ɔ sǎa-laa – pavilion">
+<span class="tag">38 · HIGH</span>
+<span class="big" lang="th">ศ</span>
+<span class="pic"><img src="img/38-so-sala.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ศ ศาลา</span>
+<span class="rd">sɔ̌ɔ sǎa-laa</span>
+<span class="mn">pavilion</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c39" aria-label="39. sɔ̌ɔ rʉʉ-sǐi – hermit">
+<span class="tag">39 · HIGH</span>
+<span class="big" lang="th">ษ</span>
+<span class="pic"><img src="img/39-so-ruesi.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ษ ฤๅษี</span>
+<span class="rd">sɔ̌ɔ rʉʉ-sǐi</span>
+<span class="mn">hermit</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c40" aria-label="40. sɔ̌ɔ sʉ̌a – tiger">
+<span class="tag">40 · HIGH</span>
+<span class="big" lang="th">ส</span>
+<span class="pic"><img src="img/40-so-suea.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ส เสือ</span>
+<span class="rd">sɔ̌ɔ sʉ̌a</span>
+<span class="mn">tiger</span></button><button class="card cc" style="--c:#CF5A3C;--bg:#FBEEE8" data-a="c41" aria-label="41. hɔ̌ɔ hìip – chest (box)">
+<span class="tag">41 · HIGH</span>
+<span class="big" lang="th">ห</span>
+<span class="pic"><img src="img/41-ho-hip.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ห หีบ</span>
+<span class="rd">hɔ̌ɔ hìip</span>
+<span class="mn">chest (box)</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c42" aria-label="42. lɔɔ jù-laa – star kite">
+<span class="tag">42 · LOW</span>
+<span class="big" lang="th">ฬ</span>
+<span class="pic"><img src="img/42-lo-chula.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฬ จุฬา</span>
+<span class="rd">lɔɔ jù-laa</span>
+<span class="mn">star kite</span></button><button class="card cc" style="--c:#3568B5;--bg:#ECF2FB" data-a="c43" aria-label="43. ɔɔ àang – basin">
+<span class="tag">43 · MID</span>
+<span class="big" lang="th">อ</span>
+<span class="pic"><img src="img/43-o-ang.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">อ อ่าง</span>
+<span class="rd">ɔɔ àang</span>
+<span class="mn">basin</span></button><button class="card cc" style="--c:#2C8460;--bg:#E8F3ED" data-a="c44" aria-label="44. hɔɔ nók-hûuk – owl">
+<span class="tag">44 · LOW</span>
+<span class="big" lang="th">ฮ</span>
+<span class="pic"><img src="img/44-ho-nokhuk.webp" alt="" loading="lazy" width="140" height="140"></span>
+<span class="nm" lang="th">ฮ นกฮูก</span>
+<span class="rd">hɔɔ nók-hûuk</span>
+<span class="mn">owl</span></button></div></section><section id="vowels" aria-labelledby="h-vowels">
+<div class="sh"><div><p class="no">Chart 2</p><h2 id="h-vowels">Vowels <span lang="th">สระ</span></h2><p class="sub"><span class="hint">🔊 Each recording says the vowel, then a few example words.</span><b style="color:#98610A">Short</b> · <b style="color:#6A48A6">long</b> · <b style="color:#B5446C">special</b>. The grey <span lang="th" style="color:#B9B0A0">อ</span> just holds the vowel.</p></div>
+<button class="pa" data-sec="vowels" type="button"><span class="ic">▶</span> <span class="lb">Play all</span></button></div>
+<div class="grid g28"><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v01" aria-label="vowel 1, a">
+<span class="tag">1 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อะ" viewBox="0 -1068 1149 1300" style="height:1.300em;width:1.149em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(601,0)" d="M41 454Q41 502 75.5 534.5Q110 567 162 567Q213 567 247.0 534.5Q281 502 281 454Q281 426 267 406Q325 416 353.5 455.5Q382 495 383 570H510Q510 496 477.0 437.5Q444 379 384.5 346.5Q325 314 248 314Q189 314 141.5 331.5Q94 349 67.5 381.0Q41 413 41 454ZM117 457Q117 438 129.5 425.5Q142 413 161 413Q181 413 193.5 425.0Q206 437 206 457Q206 477 193.5 489.0Q181 501 161 501Q142 501 129.5 489.0Q117 477 117 457ZM383 269H510Q510 194 477.0 135.5Q444 77 384.5 44.5Q325 12 248 12Q188 12 141.0 30.0Q94 48 67.5 80.0Q41 112 41 153Q41 201 75.5 233.5Q110 266 162 266Q213 266 247.0 233.5Q281 201 281 153Q281 127 267 105Q325 116 353.5 155.0Q382 194 383 269ZM206 156Q206 176 193.5 188.0Q181 200 161 200Q142 200 129.5 188.0Q117 176 117 156Q117 136 129.0 123.5Q141 111 161 111Q181 111 193.5 123.5Q206 136 206 156Z" fill="#98610A"/></g></svg></span>
+<span class="snd">a</span><span class="nm" lang="th">จะ</span><span class="rd">jà</span><span class="mn">will</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v02" aria-label="vowel 2, aa">
+<span class="tag">2 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อา" viewBox="0 -1068 1111 1300" style="height:1.300em;width:1.111em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(601,0)" d="M319 408Q319 445 296.0 465.5Q273 486 233 486Q188 486 163.0 460.5Q138 435 138 390H15Q15 482 73.0 534.0Q131 586 233 586Q333 586 389.5 541.0Q446 496 446 416V0H319Z" fill="#6A48A6"/></g></svg></span>
+<span class="snd">aa</span><span class="nm" lang="th">มา</span><span class="rd">maa</span><span class="mn">come</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v03" aria-label="vowel 3, i">
+<span class="tag">3 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อิ" viewBox="0 -1068 601 1300" style="height:1.300em;width:0.601em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(592,0)" d="M-442 715Q-500 715 -548 707Q-547 768 -518.0 814.0Q-489 860 -436.0 885.5Q-383 911 -314 911Q-197 911 -129.5 842.5Q-62 774 -57 652Q-120 679 -231.5 697.0Q-343 715 -442 715ZM-310 837Q-356 837 -389.5 820.5Q-423 804 -434 775Q-419 776 -388 776Q-330 776 -269.5 768.0Q-209 760 -163 746Q-183 791 -221.0 814.0Q-259 837 -310 837Z" fill="#98610A"/></g></svg></span>
+<span class="snd">i</span><span class="nm" lang="th">กิน</span><span class="rd">gin</span><span class="mn">eat</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v04" aria-label="vowel 4, ii">
+<span class="tag">4 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อี" viewBox="0 -1068 601 1300" style="height:1.300em;width:0.601em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(610,0)" d="M-57 652Q-120 679 -231.5 697.0Q-343 715 -442 715Q-500 715 -548 707Q-547 768 -518.0 814.0Q-489 860 -436.0 885.5Q-383 911 -314 911Q-230 911 -170 874V954H-64V711Q-59 687 -57 652ZM-163 746Q-183 791 -221.0 814.0Q-259 837 -310 837Q-356 837 -389.5 820.5Q-423 804 -434 775Q-419 776 -388 776Q-330 776 -269.5 768.0Q-209 760 -163 746Z" fill="#6A48A6"/></g></svg></span>
+<span class="snd">ii</span><span class="nm" lang="th">ดี</span><span class="rd">dii</span><span class="mn">good</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v05" aria-label="vowel 5, ʉ">
+<span class="tag">5 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อึ" viewBox="0 -1068 601 1300" style="height:1.300em;width:0.601em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(592,0)" d="M-92 791Q-60 733 -57 652Q-120 679 -231.5 697.0Q-343 715 -442 715Q-500 715 -548 707Q-547 768 -518.0 814.0Q-489 860 -436.0 885.5Q-383 911 -314 911Q-253 911 -202 891Q-198 925 -173.5 945.5Q-149 966 -112 966Q-72 966 -46.5 941.5Q-21 917 -21 878Q-21 845 -40.5 821.0Q-60 797 -92 791ZM-77 878Q-77 893 -87.0 903.0Q-97 913 -112 913Q-127 913 -137.0 903.0Q-147 893 -147 878Q-147 862 -137.0 852.0Q-127 842 -112 842Q-97 842 -87.0 852.0Q-77 862 -77 878ZM-163 746Q-183 791 -221.0 814.0Q-259 837 -310 837Q-356 837 -389.5 820.5Q-423 804 -434 775Q-419 776 -388 776Q-330 776 -269.5 768.0Q-209 760 -163 746Z" fill="#98610A"/></g></svg></span>
+<span class="snd">ʉ</span><span class="nm" lang="th">ผึ้ง</span><span class="rd">pʉ̂ng</span><span class="mn">bee</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v06" aria-label="vowel 6, ʉʉ">
+<span class="tag">6 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อือ" viewBox="0 -1068 1202 1300" style="height:1.300em;width:1.202em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(592,0)" d="M-57 652Q-120 679 -231.5 697.0Q-343 715 -442 715Q-500 715 -548 707Q-547 768 -518.0 814.0Q-489 860 -436.0 885.5Q-383 911 -314 911Q-303 911 -281 909V954H-200V890Q-167 875 -145 856V954H-64V711Q-59 687 -57 652ZM-163 746Q-183 791 -221.0 814.0Q-259 837 -310 837Q-356 837 -389.5 820.5Q-423 804 -434 775Q-419 776 -388 776Q-330 776 -269.5 768.0Q-209 760 -163 746Z" fill="#6A48A6"/><path transform="translate(601,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#6A48A6"/></g></svg></span>
+<span class="snd">ʉʉ</span><span class="nm" lang="th">มือ</span><span class="rd">mʉʉ</span><span class="mn">hand</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v07" aria-label="vowel 7, u">
+<span class="tag">7 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อุ" viewBox="0 -1068 601 1300" style="height:1.300em;width:0.601em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(592,0)" d="M-166 -248Q-174 -251 -195 -251Q-236 -251 -261.5 -224.5Q-287 -198 -287 -156Q-287 -113 -257.5 -86.5Q-228 -60 -179 -60Q-126 -60 -95.0 -86.0Q-64 -112 -64 -154V-353H-166ZM-152 -156Q-152 -138 -163.5 -127.0Q-175 -116 -192 -116Q-209 -116 -220.5 -127.0Q-232 -138 -232 -156Q-232 -173 -220.5 -184.0Q-209 -195 -192 -195Q-175 -195 -163.5 -184.0Q-152 -173 -152 -156Z" fill="#98610A"/></g></svg></span>
+<span class="snd">u</span><span class="nm" lang="th">ถุง</span><span class="rd">tǔng</span><span class="mn">bag</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v08" aria-label="vowel 8, uu">
+<span class="tag">8 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อู" viewBox="0 -1068 601 1300" style="height:1.300em;width:0.601em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(592,0)" d="M-345 -264V-234Q-354 -237 -372 -237Q-410 -237 -433.5 -212.5Q-457 -188 -457 -148Q-457 -109 -429.5 -84.5Q-402 -60 -357 -60Q-310 -60 -283.5 -83.5Q-257 -107 -257 -145V-239Q-257 -256 -244.5 -266.0Q-232 -276 -210 -276Q-189 -276 -176.5 -266.0Q-164 -256 -164 -239V-65H-64V-264Q-64 -302 -104.5 -326.0Q-145 -350 -211 -350Q-271 -350 -308.0 -326.0Q-345 -302 -345 -264ZM-333 -148Q-333 -132 -343.5 -121.5Q-354 -111 -370 -111Q-387 -111 -397.0 -121.5Q-407 -132 -407 -148Q-407 -165 -397.0 -175.0Q-387 -185 -370 -185Q-354 -185 -343.5 -175.0Q-333 -165 -333 -148Z" fill="#6A48A6"/></g></svg></span>
+<span class="snd">uu</span><span class="nm" lang="th">ปู</span><span class="rd">bpuu</span><span class="mn">crab</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v09" aria-label="vowel 9, e">
+<span class="tag">9 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="เอะ" viewBox="0 -1068 1475 1300" style="height:1.300em;width:1.475em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98Z" fill="#98610A"/><path transform="translate(326,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(927,0)" d="M41 454Q41 502 75.5 534.5Q110 567 162 567Q213 567 247.0 534.5Q281 502 281 454Q281 426 267 406Q325 416 353.5 455.5Q382 495 383 570H510Q510 496 477.0 437.5Q444 379 384.5 346.5Q325 314 248 314Q189 314 141.5 331.5Q94 349 67.5 381.0Q41 413 41 454ZM117 457Q117 438 129.5 425.5Q142 413 161 413Q181 413 193.5 425.0Q206 437 206 457Q206 477 193.5 489.0Q181 501 161 501Q142 501 129.5 489.0Q117 477 117 457ZM383 269H510Q510 194 477.0 135.5Q444 77 384.5 44.5Q325 12 248 12Q188 12 141.0 30.0Q94 48 67.5 80.0Q41 112 41 153Q41 201 75.5 233.5Q110 266 162 266Q213 266 247.0 233.5Q281 201 281 153Q281 127 267 105Q325 116 353.5 155.0Q382 194 383 269ZM206 156Q206 176 193.5 188.0Q181 200 161 200Q142 200 129.5 188.0Q117 176 117 156Q117 136 129.0 123.5Q141 111 161 111Q181 111 193.5 123.5Q206 136 206 156Z" fill="#98610A"/></g></svg></span>
+<span class="snd">e</span><span class="nm" lang="th">เตะ</span><span class="rd">dtè</span><span class="mn">kick</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v10" aria-label="vowel 10, ee">
+<span class="tag">10 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="เอ" viewBox="0 -1068 927 1300" style="height:1.300em;width:0.927em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98Z" fill="#6A48A6"/><path transform="translate(326,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/></g></svg></span>
+<span class="snd">ee</span><span class="nm" lang="th">เท</span><span class="rd">tee</span><span class="mn">pour</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v11" aria-label="vowel 11, ɛ">
+<span class="tag">11 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="แอะ" viewBox="0 -1068 1765 1300" style="height:1.300em;width:1.765em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98ZM604 98Q604 50 571.0 20.0Q538 -10 486 -10Q431 -10 396.5 22.5Q362 55 362 107V576H490V205H495Q543 205 573.5 175.0Q604 145 604 98ZM540 98Q540 118 527.5 130.5Q515 143 495 143Q476 143 463.0 130.5Q450 118 450 98Q450 79 463.0 66.0Q476 53 495 53Q515 53 527.5 65.5Q540 78 540 98Z" fill="#98610A"/><path transform="translate(616,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(1217,0)" d="M41 454Q41 502 75.5 534.5Q110 567 162 567Q213 567 247.0 534.5Q281 502 281 454Q281 426 267 406Q325 416 353.5 455.5Q382 495 383 570H510Q510 496 477.0 437.5Q444 379 384.5 346.5Q325 314 248 314Q189 314 141.5 331.5Q94 349 67.5 381.0Q41 413 41 454ZM117 457Q117 438 129.5 425.5Q142 413 161 413Q181 413 193.5 425.0Q206 437 206 457Q206 477 193.5 489.0Q181 501 161 501Q142 501 129.5 489.0Q117 477 117 457ZM383 269H510Q510 194 477.0 135.5Q444 77 384.5 44.5Q325 12 248 12Q188 12 141.0 30.0Q94 48 67.5 80.0Q41 112 41 153Q41 201 75.5 233.5Q110 266 162 266Q213 266 247.0 233.5Q281 201 281 153Q281 127 267 105Q325 116 353.5 155.0Q382 194 383 269ZM206 156Q206 176 193.5 188.0Q181 200 161 200Q142 200 129.5 188.0Q117 176 117 156Q117 136 129.0 123.5Q141 111 161 111Q181 111 193.5 123.5Q206 136 206 156Z" fill="#98610A"/></g></svg></span>
+<span class="snd">ɛ</span><span class="nm" lang="th">แกะ</span><span class="rd">gɛ̀</span><span class="mn">sheep</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v12" aria-label="vowel 12, ɛɛ">
+<span class="tag">12 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="แอ" viewBox="0 -1068 1217 1300" style="height:1.300em;width:1.217em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98ZM604 98Q604 50 571.0 20.0Q538 -10 486 -10Q431 -10 396.5 22.5Q362 55 362 107V576H490V205H495Q543 205 573.5 175.0Q604 145 604 98ZM540 98Q540 118 527.5 130.5Q515 143 495 143Q476 143 463.0 130.5Q450 118 450 98Q450 79 463.0 66.0Q476 53 495 53Q515 53 527.5 65.5Q540 78 540 98Z" fill="#6A48A6"/><path transform="translate(616,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/></g></svg></span>
+<span class="snd">ɛɛ</span><span class="nm" lang="th">แม่</span><span class="rd">mɛ̂ɛ</span><span class="mn">mother</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v13" aria-label="vowel 13, o">
+<span class="tag">13 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="โอะ" viewBox="0 -1068 1558 1300" style="height:1.300em;width:1.558em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M374 98Q374 50 341.0 20.0Q308 -10 256 -10Q201 -10 166.5 22.5Q132 55 132 107V692Q132 722 104.0 745.5Q76 769 34.0 782.5Q-8 796 -50 798Q-50 862 -25.5 906.5Q-1 951 38.5 973.0Q78 995 123 995Q153 995 177.0 987.0Q201 979 228 966Q258 950 272 950Q284 950 293.0 960.5Q302 971 305 989L391 973Q385 924 357.0 891.0Q329 858 285 858Q262 858 244.0 863.5Q226 869 201 879Q181 887 167.0 891.5Q153 896 138 896Q115 896 99.5 886.0Q84 876 79 858Q169 836 214.5 799.5Q260 763 260 709V205H265Q312 205 343.0 174.5Q374 144 374 98ZM310 98Q310 118 297.5 130.5Q285 143 265 143Q246 143 233.0 130.5Q220 118 220 98Q220 79 233.0 66.0Q246 53 265 53Q285 53 297.5 65.5Q310 78 310 98Z" fill="#98610A"/><path transform="translate(409,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(1010,0)" d="M41 454Q41 502 75.5 534.5Q110 567 162 567Q213 567 247.0 534.5Q281 502 281 454Q281 426 267 406Q325 416 353.5 455.5Q382 495 383 570H510Q510 496 477.0 437.5Q444 379 384.5 346.5Q325 314 248 314Q189 314 141.5 331.5Q94 349 67.5 381.0Q41 413 41 454ZM117 457Q117 438 129.5 425.5Q142 413 161 413Q181 413 193.5 425.0Q206 437 206 457Q206 477 193.5 489.0Q181 501 161 501Q142 501 129.5 489.0Q117 477 117 457ZM383 269H510Q510 194 477.0 135.5Q444 77 384.5 44.5Q325 12 248 12Q188 12 141.0 30.0Q94 48 67.5 80.0Q41 112 41 153Q41 201 75.5 233.5Q110 266 162 266Q213 266 247.0 233.5Q281 201 281 153Q281 127 267 105Q325 116 353.5 155.0Q382 194 383 269ZM206 156Q206 176 193.5 188.0Q181 200 161 200Q142 200 129.5 188.0Q117 176 117 156Q117 136 129.0 123.5Q141 111 161 111Q181 111 193.5 123.5Q206 136 206 156Z" fill="#98610A"/></g></svg></span>
+<span class="snd">o</span><span class="nm" lang="th">โต๊ะ</span><span class="rd">dtó</span><span class="mn">table</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v14" aria-label="vowel 14, oo">
+<span class="tag">14 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="โอ" viewBox="0 -1068 1010 1300" style="height:1.300em;width:1.010em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M374 98Q374 50 341.0 20.0Q308 -10 256 -10Q201 -10 166.5 22.5Q132 55 132 107V692Q132 722 104.0 745.5Q76 769 34.0 782.5Q-8 796 -50 798Q-50 862 -25.5 906.5Q-1 951 38.5 973.0Q78 995 123 995Q153 995 177.0 987.0Q201 979 228 966Q258 950 272 950Q284 950 293.0 960.5Q302 971 305 989L391 973Q385 924 357.0 891.0Q329 858 285 858Q262 858 244.0 863.5Q226 869 201 879Q181 887 167.0 891.5Q153 896 138 896Q115 896 99.5 886.0Q84 876 79 858Q169 836 214.5 799.5Q260 763 260 709V205H265Q312 205 343.0 174.5Q374 144 374 98ZM310 98Q310 118 297.5 130.5Q285 143 265 143Q246 143 233.0 130.5Q220 118 220 98Q220 79 233.0 66.0Q246 53 265 53Q285 53 297.5 65.5Q310 78 310 98Z" fill="#6A48A6"/><path transform="translate(409,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/></g></svg></span>
+<span class="snd">oo</span><span class="nm" lang="th">โต</span><span class="rd">dtoo</span><span class="mn">big</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v15" aria-label="vowel 15, ɔ">
+<span class="tag">15 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="เอาะ" viewBox="0 -1068 1985 1300" style="height:1.300em;width:1.985em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98Z" fill="#98610A"/><path transform="translate(326,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(927,0)" d="M319 408Q319 445 296.0 465.5Q273 486 233 486Q188 486 163.0 460.5Q138 435 138 390H15Q15 482 73.0 534.0Q131 586 233 586Q333 586 389.5 541.0Q446 496 446 416V0H319Z" fill="#98610A"/><path transform="translate(1437,0)" d="M41 454Q41 502 75.5 534.5Q110 567 162 567Q213 567 247.0 534.5Q281 502 281 454Q281 426 267 406Q325 416 353.5 455.5Q382 495 383 570H510Q510 496 477.0 437.5Q444 379 384.5 346.5Q325 314 248 314Q189 314 141.5 331.5Q94 349 67.5 381.0Q41 413 41 454ZM117 457Q117 438 129.5 425.5Q142 413 161 413Q181 413 193.5 425.0Q206 437 206 457Q206 477 193.5 489.0Q181 501 161 501Q142 501 129.5 489.0Q117 477 117 457ZM383 269H510Q510 194 477.0 135.5Q444 77 384.5 44.5Q325 12 248 12Q188 12 141.0 30.0Q94 48 67.5 80.0Q41 112 41 153Q41 201 75.5 233.5Q110 266 162 266Q213 266 247.0 233.5Q281 201 281 153Q281 127 267 105Q325 116 353.5 155.0Q382 194 383 269ZM206 156Q206 176 193.5 188.0Q181 200 161 200Q142 200 129.5 188.0Q117 176 117 156Q117 136 129.0 123.5Q141 111 161 111Q181 111 193.5 123.5Q206 136 206 156Z" fill="#98610A"/></g></svg></span>
+<span class="snd">ɔ</span><span class="nm" lang="th">เกาะ</span><span class="rd">gɔ̀</span><span class="mn">island</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v16" aria-label="vowel 16, ɔɔ">
+<span class="tag">16 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="ออ" viewBox="0 -1068 1202 1300" style="height:1.300em;width:1.202em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(601,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#6A48A6"/></g></svg></span>
+<span class="snd">ɔɔ</span><span class="nm" lang="th">พ่อ</span><span class="rd">pɔ̂ɔ</span><span class="mn">father</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v17" aria-label="vowel 17, ə">
+<span class="tag">17 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="เออะ" viewBox="0 -1068 2076 1300" style="height:1.300em;width:2.076em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98Z" fill="#98610A"/><path transform="translate(326,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(927,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#98610A"/><path transform="translate(1528,0)" d="M41 454Q41 502 75.5 534.5Q110 567 162 567Q213 567 247.0 534.5Q281 502 281 454Q281 426 267 406Q325 416 353.5 455.5Q382 495 383 570H510Q510 496 477.0 437.5Q444 379 384.5 346.5Q325 314 248 314Q189 314 141.5 331.5Q94 349 67.5 381.0Q41 413 41 454ZM117 457Q117 438 129.5 425.5Q142 413 161 413Q181 413 193.5 425.0Q206 437 206 457Q206 477 193.5 489.0Q181 501 161 501Q142 501 129.5 489.0Q117 477 117 457ZM383 269H510Q510 194 477.0 135.5Q444 77 384.5 44.5Q325 12 248 12Q188 12 141.0 30.0Q94 48 67.5 80.0Q41 112 41 153Q41 201 75.5 233.5Q110 266 162 266Q213 266 247.0 233.5Q281 201 281 153Q281 127 267 105Q325 116 353.5 155.0Q382 194 383 269ZM206 156Q206 176 193.5 188.0Q181 200 161 200Q142 200 129.5 188.0Q117 176 117 156Q117 136 129.0 123.5Q141 111 161 111Q181 111 193.5 123.5Q206 136 206 156Z" fill="#98610A"/></g></svg></span>
+<span class="snd">ə</span><span class="nm" lang="th">เยอะ</span><span class="rd">yə́</span><span class="mn">a lot</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v18" aria-label="vowel 18, əə">
+<span class="tag">18 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="เออ" viewBox="0 -1068 1528 1300" style="height:1.300em;width:1.528em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98Z" fill="#6A48A6"/><path transform="translate(326,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(927,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#6A48A6"/></g></svg></span>
+<span class="snd">əə</span><span class="nm" lang="th">เธอ</span><span class="rd">təə</span><span class="mn">you, she</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v19" aria-label="vowel 19, ia">
+<span class="tag">19 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="เอียะ" viewBox="0 -1068 2062 1300" style="height:1.300em;width:2.062em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98Z" fill="#98610A"/><path transform="translate(326,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(936,0)" d="M-57 652Q-120 679 -231.5 697.0Q-343 715 -442 715Q-500 715 -548 707Q-547 768 -518.0 814.0Q-489 860 -436.0 885.5Q-383 911 -314 911Q-230 911 -170 874V954H-64V711Q-59 687 -57 652ZM-163 746Q-183 791 -221.0 814.0Q-259 837 -310 837Q-356 837 -389.5 820.5Q-423 804 -434 775Q-419 776 -388 776Q-330 776 -269.5 768.0Q-209 760 -163 746Z" fill="#98610A"/><path transform="translate(927,0)" d="M524 576V145Q524 72 461.5 31.0Q399 -10 288 -10Q181 -10 116.5 31.5Q52 73 52 145V201Q52 232 66.5 255.5Q81 279 115 296Q77 316 60.0 353.0Q43 390 43 436Q43 504 80.0 545.0Q117 586 182 586Q235 586 265.5 558.5Q296 531 296 484Q296 439 267.0 412.5Q238 386 189 386Q182 386 168 388Q173 340 219 340H327V248H218Q200 248 189.5 236.5Q179 225 179 205V157Q179 125 207.5 107.5Q236 90 288 90Q340 90 368.0 107.5Q396 125 396 157V576ZM143 487Q143 468 155.5 455.5Q168 443 187 443Q207 443 219.0 455.5Q231 468 231 487Q231 507 219.0 519.0Q207 531 187 531Q168 531 155.5 519.0Q143 507 143 487Z" fill="#98610A"/><path transform="translate(1514,0)" d="M41 454Q41 502 75.5 534.5Q110 567 162 567Q213 567 247.0 534.5Q281 502 281 454Q281 426 267 406Q325 416 353.5 455.5Q382 495 383 570H510Q510 496 477.0 437.5Q444 379 384.5 346.5Q325 314 248 314Q189 314 141.5 331.5Q94 349 67.5 381.0Q41 413 41 454ZM117 457Q117 438 129.5 425.5Q142 413 161 413Q181 413 193.5 425.0Q206 437 206 457Q206 477 193.5 489.0Q181 501 161 501Q142 501 129.5 489.0Q117 477 117 457ZM383 269H510Q510 194 477.0 135.5Q444 77 384.5 44.5Q325 12 248 12Q188 12 141.0 30.0Q94 48 67.5 80.0Q41 112 41 153Q41 201 75.5 233.5Q110 266 162 266Q213 266 247.0 233.5Q281 201 281 153Q281 127 267 105Q325 116 353.5 155.0Q382 194 383 269ZM206 156Q206 176 193.5 188.0Q181 200 161 200Q142 200 129.5 188.0Q117 176 117 156Q117 136 129.0 123.5Q141 111 161 111Q181 111 193.5 123.5Q206 136 206 156Z" fill="#98610A"/></g></svg></span>
+<span class="snd">ia</span><span class="nm" lang="th">เกี๊ยะ</span><span class="rd">gía</span><span class="mn">wood clogs</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v20" aria-label="vowel 20, ia">
+<span class="tag">20 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="เอีย" viewBox="0 -1068 1514 1300" style="height:1.300em;width:1.514em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98Z" fill="#6A48A6"/><path transform="translate(326,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(936,0)" d="M-57 652Q-120 679 -231.5 697.0Q-343 715 -442 715Q-500 715 -548 707Q-547 768 -518.0 814.0Q-489 860 -436.0 885.5Q-383 911 -314 911Q-230 911 -170 874V954H-64V711Q-59 687 -57 652ZM-163 746Q-183 791 -221.0 814.0Q-259 837 -310 837Q-356 837 -389.5 820.5Q-423 804 -434 775Q-419 776 -388 776Q-330 776 -269.5 768.0Q-209 760 -163 746Z" fill="#6A48A6"/><path transform="translate(927,0)" d="M524 576V145Q524 72 461.5 31.0Q399 -10 288 -10Q181 -10 116.5 31.5Q52 73 52 145V201Q52 232 66.5 255.5Q81 279 115 296Q77 316 60.0 353.0Q43 390 43 436Q43 504 80.0 545.0Q117 586 182 586Q235 586 265.5 558.5Q296 531 296 484Q296 439 267.0 412.5Q238 386 189 386Q182 386 168 388Q173 340 219 340H327V248H218Q200 248 189.5 236.5Q179 225 179 205V157Q179 125 207.5 107.5Q236 90 288 90Q340 90 368.0 107.5Q396 125 396 157V576ZM143 487Q143 468 155.5 455.5Q168 443 187 443Q207 443 219.0 455.5Q231 468 231 487Q231 507 219.0 519.0Q207 531 187 531Q168 531 155.5 519.0Q143 507 143 487Z" fill="#6A48A6"/></g></svg></span>
+<span class="snd">ia</span><span class="nm" lang="th">เบียร์</span><span class="rd">bia</span><span class="mn">beer</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v21" aria-label="vowel 21, ʉa">
+<span class="tag">21 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="เอือะ" viewBox="0 -1068 2076 1300" style="height:1.300em;width:2.076em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98Z" fill="#98610A"/><path transform="translate(326,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(918,0)" d="M-57 652Q-120 679 -231.5 697.0Q-343 715 -442 715Q-500 715 -548 707Q-547 768 -518.0 814.0Q-489 860 -436.0 885.5Q-383 911 -314 911Q-303 911 -281 909V954H-200V890Q-167 875 -145 856V954H-64V711Q-59 687 -57 652ZM-163 746Q-183 791 -221.0 814.0Q-259 837 -310 837Q-356 837 -389.5 820.5Q-423 804 -434 775Q-419 776 -388 776Q-330 776 -269.5 768.0Q-209 760 -163 746Z" fill="#98610A"/><path transform="translate(927,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#98610A"/><path transform="translate(1528,0)" d="M41 454Q41 502 75.5 534.5Q110 567 162 567Q213 567 247.0 534.5Q281 502 281 454Q281 426 267 406Q325 416 353.5 455.5Q382 495 383 570H510Q510 496 477.0 437.5Q444 379 384.5 346.5Q325 314 248 314Q189 314 141.5 331.5Q94 349 67.5 381.0Q41 413 41 454ZM117 457Q117 438 129.5 425.5Q142 413 161 413Q181 413 193.5 425.0Q206 437 206 457Q206 477 193.5 489.0Q181 501 161 501Q142 501 129.5 489.0Q117 477 117 457ZM383 269H510Q510 194 477.0 135.5Q444 77 384.5 44.5Q325 12 248 12Q188 12 141.0 30.0Q94 48 67.5 80.0Q41 112 41 153Q41 201 75.5 233.5Q110 266 162 266Q213 266 247.0 233.5Q281 201 281 153Q281 127 267 105Q325 116 353.5 155.0Q382 194 383 269ZM206 156Q206 176 193.5 188.0Q181 200 161 200Q142 200 129.5 188.0Q117 176 117 156Q117 136 129.0 123.5Q141 111 161 111Q181 111 193.5 123.5Q206 136 206 156Z" fill="#98610A"/></g></svg></span>
+<span class="snd">ʉa</span><span class="nm">–</span><span class="rd">no common word</span><span class="mn">very rare</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v22" aria-label="vowel 22, ʉa">
+<span class="tag">22 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="เอือ" viewBox="0 -1068 1528 1300" style="height:1.300em;width:1.528em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98Z" fill="#6A48A6"/><path transform="translate(326,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(918,0)" d="M-57 652Q-120 679 -231.5 697.0Q-343 715 -442 715Q-500 715 -548 707Q-547 768 -518.0 814.0Q-489 860 -436.0 885.5Q-383 911 -314 911Q-303 911 -281 909V954H-200V890Q-167 875 -145 856V954H-64V711Q-59 687 -57 652ZM-163 746Q-183 791 -221.0 814.0Q-259 837 -310 837Q-356 837 -389.5 820.5Q-423 804 -434 775Q-419 776 -388 776Q-330 776 -269.5 768.0Q-209 760 -163 746Z" fill="#6A48A6"/><path transform="translate(927,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#6A48A6"/></g></svg></span>
+<span class="snd">ʉa</span><span class="nm" lang="th">เรือ</span><span class="rd">rʉa</span><span class="mn">boat</span></button><button class="card vc" style="--c:#98610A;--bg:#FCF4E4" data-a="v23" aria-label="vowel 23, ua">
+<span class="tag">23 · SHORT</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อัวะ" viewBox="0 -1068 1684 1300" style="height:1.300em;width:1.684em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(592,0)" d="M83 927Q83 848 46.5 791.0Q10 734 -52.5 704.0Q-115 674 -193 674Q-291 674 -346.0 712.0Q-401 750 -401 813Q-401 860 -370.5 888.0Q-340 916 -292 916Q-244 916 -213.0 887.5Q-182 859 -182 812Q-182 775 -201 748Q-114 748 -67.5 799.5Q-21 851 -20 927ZM-292 769Q-273 769 -260.0 782.0Q-247 795 -247 814Q-247 833 -259.5 845.0Q-272 857 -292 857Q-312 857 -324.5 845.0Q-337 833 -337 814Q-337 794 -324.5 781.5Q-312 769 -292 769Z" fill="#98610A"/><path transform="translate(601,0)" d="M471 406V107Q471 55 436.5 22.5Q402 -10 347 -10Q295 -10 262.0 20.5Q229 51 229 98Q229 146 259.5 175.5Q290 205 338 205H343V399Q343 441 318.5 463.5Q294 486 247 486Q203 486 175.5 460.5Q148 435 142 390H15Q19 482 81.5 534.0Q144 586 249 586Q355 586 413.0 538.5Q471 491 471 406ZM383 98Q383 118 370.5 130.5Q358 143 338 143Q318 143 305.5 130.5Q293 118 293 98Q293 78 305.5 65.5Q318 53 338 53Q358 53 370.5 66.0Q383 79 383 98Z" fill="#98610A"/><path transform="translate(1136,0)" d="M41 454Q41 502 75.5 534.5Q110 567 162 567Q213 567 247.0 534.5Q281 502 281 454Q281 426 267 406Q325 416 353.5 455.5Q382 495 383 570H510Q510 496 477.0 437.5Q444 379 384.5 346.5Q325 314 248 314Q189 314 141.5 331.5Q94 349 67.5 381.0Q41 413 41 454ZM117 457Q117 438 129.5 425.5Q142 413 161 413Q181 413 193.5 425.0Q206 437 206 457Q206 477 193.5 489.0Q181 501 161 501Q142 501 129.5 489.0Q117 477 117 457ZM383 269H510Q510 194 477.0 135.5Q444 77 384.5 44.5Q325 12 248 12Q188 12 141.0 30.0Q94 48 67.5 80.0Q41 112 41 153Q41 201 75.5 233.5Q110 266 162 266Q213 266 247.0 233.5Q281 201 281 153Q281 127 267 105Q325 116 353.5 155.0Q382 194 383 269ZM206 156Q206 176 193.5 188.0Q181 200 161 200Q142 200 129.5 188.0Q117 176 117 156Q117 136 129.0 123.5Q141 111 161 111Q181 111 193.5 123.5Q206 136 206 156Z" fill="#98610A"/></g></svg></span>
+<span class="snd">ua</span><span class="nm" lang="th">ผัวะ</span><span class="rd">pùa</span><span class="mn">smack! (sound)</span></button><button class="card vc" style="--c:#6A48A6;--bg:#F2EDF9" data-a="v24" aria-label="vowel 24, ua">
+<span class="tag">24 · LONG</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อัว" viewBox="0 -1068 1136 1300" style="height:1.300em;width:1.136em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(592,0)" d="M83 927Q83 848 46.5 791.0Q10 734 -52.5 704.0Q-115 674 -193 674Q-291 674 -346.0 712.0Q-401 750 -401 813Q-401 860 -370.5 888.0Q-340 916 -292 916Q-244 916 -213.0 887.5Q-182 859 -182 812Q-182 775 -201 748Q-114 748 -67.5 799.5Q-21 851 -20 927ZM-292 769Q-273 769 -260.0 782.0Q-247 795 -247 814Q-247 833 -259.5 845.0Q-272 857 -292 857Q-312 857 -324.5 845.0Q-337 833 -337 814Q-337 794 -324.5 781.5Q-312 769 -292 769Z" fill="#6A48A6"/><path transform="translate(601,0)" d="M471 406V107Q471 55 436.5 22.5Q402 -10 347 -10Q295 -10 262.0 20.5Q229 51 229 98Q229 146 259.5 175.5Q290 205 338 205H343V399Q343 441 318.5 463.5Q294 486 247 486Q203 486 175.5 460.5Q148 435 142 390H15Q19 482 81.5 534.0Q144 586 249 586Q355 586 413.0 538.5Q471 491 471 406ZM383 98Q383 118 370.5 130.5Q358 143 338 143Q318 143 305.5 130.5Q293 118 293 98Q293 78 305.5 65.5Q318 53 338 53Q358 53 370.5 66.0Q383 79 383 98Z" fill="#6A48A6"/></g></svg></span>
+<span class="snd">ua</span><span class="nm" lang="th">วัว</span><span class="rd">wua</span><span class="mn">cow</span></button><button class="card vc" style="--c:#B5446C;--bg:#FBEDF2" data-a="v25" aria-label="vowel 25, am">
+<span class="tag">25 · SPECIAL</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="อำ" viewBox="0 -1068 1111 1300" style="height:1.300em;width:1.111em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(592,0)" d="M-259 783Q-259 838 -223.0 872.5Q-187 907 -129 907Q-71 907 -34.5 872.5Q2 838 2 783Q2 728 -34.5 693.5Q-71 659 -129 659Q-187 659 -223.0 693.5Q-259 728 -259 783ZM-72 783Q-72 808 -88.0 823.5Q-104 839 -129 839Q-154 839 -169.5 823.5Q-185 808 -185 783Q-185 758 -169.5 742.0Q-154 726 -129 726Q-104 726 -88.0 742.0Q-72 758 -72 783Z" fill="#B5446C"/><path transform="translate(601,0)" d="M319 408Q319 445 296.0 465.5Q273 486 233 486Q188 486 163.0 460.5Q138 435 138 390H15Q15 482 73.0 534.0Q131 586 233 586Q333 586 389.5 541.0Q446 496 446 416V0H319Z" fill="#B5446C"/></g></svg></span>
+<span class="snd">am</span><span class="nm" lang="th">ทำ</span><span class="rd">tam</span><span class="mn">do, make</span></button><button class="card vc" style="--c:#B5446C;--bg:#FBEDF2" data-a="v26" aria-label="vowel 26, ai">
+<span class="tag">26 · SPECIAL</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="ใอ" viewBox="0 -1068 1026 1300" style="height:1.300em;width:1.026em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M397 98Q397 50 364.0 20.0Q331 -10 279 -10Q224 -10 189.5 22.5Q155 55 155 107V629Q155 672 165.5 705.0Q176 738 196 777Q209 802 215.5 819.0Q222 836 222 853Q222 885 197.5 902.0Q173 919 135 919Q89 919 63 891H69Q108 891 135.0 865.5Q162 840 162 799Q162 756 131.5 727.5Q101 699 50 699Q-1 699 -33.0 730.0Q-65 761 -65 820Q-65 872 -40.5 914.0Q-16 956 30.5 980.5Q77 1005 142 1005Q229 1005 288.5 964.5Q348 924 348 856Q348 829 340.5 808.5Q333 788 318 764Q301 734 292.0 708.0Q283 682 283 643V205H288Q334 205 365.5 174.5Q397 144 397 98ZM51 838Q33 838 22.0 826.5Q11 815 11 797Q11 779 22.0 767.5Q33 756 51 756Q70 756 81.0 767.5Q92 779 92 797Q92 815 81.0 826.5Q70 838 51 838ZM333 98Q333 118 320.5 130.5Q308 143 288 143Q269 143 256.0 130.5Q243 118 243 98Q243 79 256.0 66.0Q269 53 288 53Q308 53 320.5 66.0Q333 79 333 98Z" fill="#B5446C"/><path transform="translate(425,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/></g></svg></span>
+<span class="snd">ai</span><span class="nm" lang="th">ใจ</span><span class="rd">jai</span><span class="mn">heart</span></button><button class="card vc" style="--c:#B5446C;--bg:#FBEDF2" data-a="v27" aria-label="vowel 27, ai">
+<span class="tag">27 · SPECIAL</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="ไอ" viewBox="0 -1068 1050 1300" style="height:1.300em;width:1.050em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M421 98Q421 50 388.0 20.0Q355 -10 303 -10Q248 -10 213.5 22.5Q179 55 179 107V850L75 694L-21 725Q-38 881 -65 1011H38Q61 897 66 818L185 996H307V205H312Q360 205 390.5 175.0Q421 145 421 98ZM357 98Q357 118 344.5 130.5Q332 143 312 143Q293 143 280.0 130.5Q267 118 267 98Q267 79 280.0 66.0Q293 53 312 53Q332 53 344.5 66.0Q357 79 357 98Z" fill="#B5446C"/><path transform="translate(449,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/></g></svg></span>
+<span class="snd">ai</span><span class="nm" lang="th">ไป</span><span class="rd">bpai</span><span class="mn">go</span></button><button class="card vc" style="--c:#B5446C;--bg:#FBEDF2" data-a="v28" aria-label="vowel 28, ao">
+<span class="tag">28 · SPECIAL</span>
+<span class="vf" lang="th"><svg class="vsvg" role="img" aria-label="เอา" viewBox="0 -1068 1437 1300" style="height:1.300em;width:1.437em"><g transform="scale(1,-1) translate(0,0)"><path transform="translate(0,0)" d="M314 98Q314 50 281.0 20.0Q248 -10 196 -10Q141 -10 106.5 22.5Q72 55 72 107V576H200V205H205Q253 205 283.5 175.0Q314 145 314 98ZM250 98Q250 118 237.5 130.5Q225 143 205 143Q186 143 173.0 130.5Q160 118 160 98Q160 79 173.0 66.0Q186 53 205 53Q225 53 237.5 65.5Q250 78 250 98Z" fill="#B5446C"/><path transform="translate(326,0)" d="M538 408V140Q538 70 476.5 30.0Q415 -10 310 -10Q204 -10 144.0 30.5Q84 71 84 140V270Q84 322 118.0 353.5Q152 385 206 385Q259 385 291.0 355.5Q323 326 323 279Q323 232 292.5 203.5Q262 175 215 175H210V147Q210 120 238.5 105.0Q267 90 312 90Q361 90 385.5 107.5Q410 125 410 155V403Q410 440 377.5 463.0Q345 486 291 486Q239 486 201.5 464.5Q164 443 157 407H33Q37 461 71.0 501.5Q105 542 162.5 564.0Q220 586 293 586Q366 586 421.5 563.5Q477 541 507.5 501.0Q538 461 538 408ZM172 280Q172 260 184.0 248.0Q196 236 216 236Q235 236 247.5 248.0Q260 260 260 280Q260 299 247.5 311.0Q235 323 216 323Q196 323 184.0 311.0Q172 299 172 280Z" fill="#B9B0A0"/><path transform="translate(927,0)" d="M319 408Q319 445 296.0 465.5Q273 486 233 486Q188 486 163.0 460.5Q138 435 138 390H15Q15 482 73.0 534.0Q131 586 233 586Q333 586 389.5 541.0Q446 496 446 416V0H319Z" fill="#B5446C"/></g></svg></span>
+<span class="snd">ao</span><span class="nm" lang="th">เรา</span><span class="rd">rao</span><span class="mn">we</span></button></div></section><section id="tones" aria-labelledby="h-tones">
+<div class="sh"><div><p class="no">Chart 3</p><h2 id="h-tones">Tones <span lang="th">วรรณยุกต์</span></h2><p class="sub">Five tones, one syllable: <span lang="th">คา ข่า ค่า ค้า ขา</span>. Listen to how the pitch moves.</p></div>
+<button class="pa" data-sec="tones" type="button"><span class="ic">▶</span> <span class="lb">Play all</span></button></div>
+<div class="grid g5"><button class="card tc" style="--c:#98610A;--bg:#FCF4E4" data-a="t1" aria-label="mid tone: kaa, stuck">
+<span class="tag">MID TONE</span>
+<svg viewBox="0 0 40 26" class="ct" aria-hidden="true"><line x1="2" y1="3" x2="38" y2="3" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="8" x2="38" y2="8" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="13" x2="38" y2="13" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="18" x2="38" y2="18" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="23" x2="38" y2="23" stroke="#00000014" stroke-width=".6"/><path d="M5 13 L35 13" fill="none" stroke="#98610A" stroke-width="2.4" stroke-linecap="round"/></svg>
+<span class="tw" lang="th">คา</span>
+<span class="rd">kaa</span>
+<span class="mn">stuck</span>
+<span class="tn"><span lang="th">สามัญ</span> · sǎa-man</span></button><button class="card tc" style="--c:#98610A;--bg:#FCF4E4" data-a="t2" aria-label="low tone: kàa, galangal">
+<span class="tag">LOW TONE</span>
+<svg viewBox="0 0 40 26" class="ct" aria-hidden="true"><line x1="2" y1="3" x2="38" y2="3" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="8" x2="38" y2="8" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="13" x2="38" y2="13" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="18" x2="38" y2="18" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="23" x2="38" y2="23" stroke="#00000014" stroke-width=".6"/><path d="M5 15 C15 16 25 18 35 21" fill="none" stroke="#98610A" stroke-width="2.4" stroke-linecap="round"/></svg>
+<span class="tw" lang="th">ข่า</span>
+<span class="rd">kàa</span>
+<span class="mn">galangal</span>
+<span class="tn"><span lang="th">เอก</span> · èek</span></button><button class="card tc" style="--c:#98610A;--bg:#FCF4E4" data-a="t3" aria-label="falling tone: kâa, value, cost">
+<span class="tag">FALLING TONE</span>
+<svg viewBox="0 0 40 26" class="ct" aria-hidden="true"><line x1="2" y1="3" x2="38" y2="3" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="8" x2="38" y2="8" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="13" x2="38" y2="13" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="18" x2="38" y2="18" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="23" x2="38" y2="23" stroke="#00000014" stroke-width=".6"/><path d="M5 10 C14 4 22 4 35 21" fill="none" stroke="#98610A" stroke-width="2.4" stroke-linecap="round"/></svg>
+<span class="tw" lang="th">ค่า</span>
+<span class="rd">kâa</span>
+<span class="mn">value, cost</span>
+<span class="tn"><span lang="th">โท</span> · too</span></button><button class="card tc" style="--c:#98610A;--bg:#FCF4E4" data-a="t4" aria-label="high tone: káa, to trade">
+<span class="tag">HIGH TONE</span>
+<svg viewBox="0 0 40 26" class="ct" aria-hidden="true"><line x1="2" y1="3" x2="38" y2="3" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="8" x2="38" y2="8" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="13" x2="38" y2="13" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="18" x2="38" y2="18" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="23" x2="38" y2="23" stroke="#00000014" stroke-width=".6"/><path d="M5 9 C15 9 26 8 35 3" fill="none" stroke="#98610A" stroke-width="2.4" stroke-linecap="round"/></svg>
+<span class="tw" lang="th">ค้า</span>
+<span class="rd">káa</span>
+<span class="mn">to trade</span>
+<span class="tn"><span lang="th">ตรี</span> · dtrii</span></button><button class="card tc" style="--c:#98610A;--bg:#FCF4E4" data-a="t5" aria-label="rising tone: kǎa, leg">
+<span class="tag">RISING TONE</span>
+<svg viewBox="0 0 40 26" class="ct" aria-hidden="true"><line x1="2" y1="3" x2="38" y2="3" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="8" x2="38" y2="8" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="13" x2="38" y2="13" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="18" x2="38" y2="18" stroke="#00000014" stroke-width=".6"/><line x1="2" y1="23" x2="38" y2="23" stroke="#00000014" stroke-width=".6"/><path d="M5 14 C14 22 24 21 35 4" fill="none" stroke="#98610A" stroke-width="2.4" stroke-linecap="round"/></svg>
+<span class="tw" lang="th">ขา</span>
+<span class="rd">kǎa</span>
+<span class="mn">leg</span>
+<span class="tn"><span lang="th">จัตวา</span> · jàt-dtà-waa</span></button></div></section><section id="numbers" aria-labelledby="h-numbers">
+<div class="sh"><div><p class="no">Chart 4</p><h2 id="h-numbers">Numbers <span lang="th">ตัวเลข</span></h2><p class="sub">Tap a number to hear it in Thai.</p></div>
+<button class="pa" data-sec="numbers" type="button"><span class="ic">▶</span> <span class="lb">Play all</span></button></div>
+<div class="grid g10"><button class="card nc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n0" aria-label="0, sǔun">
+<span class="tag">0</span>
+<span class="dg" lang="th">๐</span>
+<span class="nm" lang="th">ศูนย์</span>
+<span class="rd">sǔun</span>
+<span class="mn">zero</span></button><button class="card nc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n1" aria-label="1, nʉ̀ng">
+<span class="tag">1</span>
+<span class="dg" lang="th">๑</span>
+<span class="nm" lang="th">หนึ่ง</span>
+<span class="rd">nʉ̀ng</span>
+<span class="mn">one</span></button><button class="card nc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n2" aria-label="2, sɔ̌ɔng">
+<span class="tag">2</span>
+<span class="dg" lang="th">๒</span>
+<span class="nm" lang="th">สอง</span>
+<span class="rd">sɔ̌ɔng</span>
+<span class="mn">two</span></button><button class="card nc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n3" aria-label="3, sǎam">
+<span class="tag">3</span>
+<span class="dg" lang="th">๓</span>
+<span class="nm" lang="th">สาม</span>
+<span class="rd">sǎam</span>
+<span class="mn">three</span></button><button class="card nc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n4" aria-label="4, sìi">
+<span class="tag">4</span>
+<span class="dg" lang="th">๔</span>
+<span class="nm" lang="th">สี่</span>
+<span class="rd">sìi</span>
+<span class="mn">four</span></button><button class="card nc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n5" aria-label="5, hâa">
+<span class="tag">5</span>
+<span class="dg" lang="th">๕</span>
+<span class="nm" lang="th">ห้า</span>
+<span class="rd">hâa</span>
+<span class="mn">five</span></button><button class="card nc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n6" aria-label="6, hòk">
+<span class="tag">6</span>
+<span class="dg" lang="th">๖</span>
+<span class="nm" lang="th">หก</span>
+<span class="rd">hòk</span>
+<span class="mn">six</span></button><button class="card nc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n7" aria-label="7, jèt">
+<span class="tag">7</span>
+<span class="dg" lang="th">๗</span>
+<span class="nm" lang="th">เจ็ด</span>
+<span class="rd">jèt</span>
+<span class="mn">seven</span></button><button class="card nc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n8" aria-label="8, bpɛ̀ɛt">
+<span class="tag">8</span>
+<span class="dg" lang="th">๘</span>
+<span class="nm" lang="th">แปด</span>
+<span class="rd">bpɛ̀ɛt</span>
+<span class="mn">eight</span></button><button class="card nc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n9" aria-label="9, gâao">
+<span class="tag">9</span>
+<span class="dg" lang="th">๙</span>
+<span class="nm" lang="th">เก้า</span>
+<span class="rd">gâao</span>
+<span class="mn">nine</span></button></div><h3 class="h3">Bigger numbers</h3><div class="grid g6"><button class="card bc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n10" aria-label="10, sìp">
+<span class="tag">10</span>
+<span class="dg2" lang="th">๑๐</span>
+<span class="nm" lang="th">สิบ</span>
+<span class="rd">sìp</span></button><button class="card bc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n11" aria-label="11, sìp-èt">
+<span class="tag">11<span class="star">★</span></span>
+<span class="dg2" lang="th">๑๑</span>
+<span class="nm" lang="th">สิบเอ็ด</span>
+<span class="rd">sìp-èt</span></button><button class="card bc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n20" aria-label="20, yîi-sìp">
+<span class="tag">20<span class="star">★</span></span>
+<span class="dg2" lang="th">๒๐</span>
+<span class="nm" lang="th">ยี่สิบ</span>
+<span class="rd">yîi-sìp</span></button><button class="card bc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n21" aria-label="21, yîi-sìp-èt">
+<span class="tag">21<span class="star">★</span></span>
+<span class="dg2" lang="th">๒๑</span>
+<span class="nm" lang="th">ยี่สิบเอ็ด</span>
+<span class="rd">yîi-sìp-èt</span></button><button class="card bc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n100" aria-label="100, nʉ̀ng-rɔ́ɔi">
+<span class="tag">100</span>
+<span class="dg2" lang="th">๑๐๐</span>
+<span class="nm" lang="th">หนึ่งร้อย</span>
+<span class="rd">nʉ̀ng-rɔ́ɔi</span></button><button class="card bc" style="--c:#3568B5;--bg:#ECF2FB" data-a="n1000" aria-label="1,000, nʉ̀ng-pan">
+<span class="tag">1,000</span>
+<span class="dg2 long" lang="th">๑,๐๐๐</span>
+<span class="nm" lang="th">หนึ่งพัน</span>
+<span class="rd">nʉ̀ng-pan</span></button></div><p class="note">★ 1 at the end is <span lang="th">เอ็ด</span> èt (11, 21) · 2 in the tens is <span lang="th">ยี่</span> yîi (20, 21)</p></section></main>
+<footer><span>Speak Thai Today · Teacher Bua · <a href="https://myfirstthai.com/">myfirstthai.com</a></span><span>© 2026 Sujitra Lorsuwan · personal and classroom use</span></footer>
+<div class="msg" role="status" aria-live="polite"></div>
+<script>function toHash(){const t=location.hash&&document.getElementById(location.hash.slice(1));if(t)t.scrollIntoView({behavior:'instant',block:'start'})}
+if(location.hash){document.documentElement.style.scrollBehavior='auto';toHash();(document.fonts?document.fonts.ready:Promise.resolve()).then(()=>{toHash();setTimeout(()=>{toHash();document.documentElement.style.scrollBehavior=''},300)})}
+const au=new Audio();au.preload='none';let cur=null,queue=[],qsec=null,timer=null;
+const msg=document.querySelector('.msg');
+function say(t){msg.textContent=t;msg.style.display='block';clearTimeout(say.t);say.t=setTimeout(()=>msg.style.display='none',4000)}
+function mark(el){document.querySelectorAll('.card.play').forEach(c=>c.classList.remove('play'));if(el){el.classList.remove('err');el.classList.add('play')}}
+function stopAll(){au.pause();clearTimeout(timer);queue=[];mark(null);cur=null;
+ document.querySelectorAll('.pa.on').forEach(b=>{b.classList.remove('on');b.querySelector('.ic').textContent='▶';b.querySelector('.lb').textContent='Play all'})}
+function play(el,fromQueue){if(!fromQueue&&qsec)stopAll();cur=el;mark(el);au.src='audio/'+el.dataset.a+'.mp3';
+ const p=au.play();if(p)p.catch(err=>{if(err.name==='AbortError')return;el.classList.remove('play');el.classList.add('err');
+ say("Sorry, the audio didn't play. Check your sound and tap again.");stopAll()})}
+au.addEventListener('ended',()=>{if(cur)cur.classList.remove('play');if(queue.length){timer=setTimeout(()=>play(queue.shift(),true),600)}else{if(qsec)stopAll();qsec=null}});
+au.addEventListener('error',()=>{if(!cur)return;cur.classList.remove('play');cur.classList.add('err');say("Sorry, this sound couldn't load. Check your connection and tap again.");stopAll();qsec=null});
+document.querySelectorAll('.card[data-a]').forEach(c=>c.addEventListener('click',()=>{if(cur===c&&!au.paused){stopAll();qsec=null;return}play(c,false)}));
+document.querySelectorAll('.pa').forEach(b=>b.addEventListener('click',()=>{const on=b.classList.contains('on');stopAll();qsec=null;if(on)return;
+ queue=[...document.querySelectorAll('#'+b.dataset.sec+' .card[data-a]')];qsec=b.dataset.sec;b.classList.add('on');b.querySelector('.ic').textContent='■';b.querySelector('.lb').textContent='Stop';
+ play(queue.shift(),true)}));</script></body></html>
