@@ -1,0 +1,58 @@
+/* =========================================================
+   Phase 1 pages: /books /shop /start /privacy /terms /thanks
+   + email signup block. Loaded AFTER assets/style.css.
+   ========================================================= */
+.nav-drop a.here{color:var(--red)}
+nav .links a.nav-cta{white-space:nowrap}
+
+/* ---------- Email signup ---------- */
+.signup{background:var(--yel);border:3px solid var(--ink);border-radius:28px;padding:34px;box-shadow:8px 8px 0 var(--ink);display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center}
+.signup h2{margin-bottom:6px}
+.signup p{margin:0 0 6px}
+.signup ul{margin:10px 0 0;padding-left:20px}
+.signup form{display:flex;flex-direction:column;gap:12px}
+.signup label{font-weight:700;font-size:14px}
+.signup input[type=email],.signup input[type=text]{width:100%;font:inherit;font-size:16px;padding:12px 16px;border:3px solid var(--ink);border-radius:14px;background:#fff}
+.signup .fine{font-size:12.5px;color:#3a4350}
+.signup .fine a{color:var(--navy)}
+.signup .msg{font-weight:700;display:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media(max-width:860px){.signup{grid-template-columns:1fr;padding:24px}}
+
+/* ---------- Book cards ---------- */
+.books{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.book{display:flex;flex-direction:column;background:#fff;border:3px solid var(--ink);border-radius:var(--radius);box-shadow:5px 5px 0 var(--ink);overflow:hidden}
+.book .cover{background:var(--mint);border-bottom:3px solid var(--ink);padding:18px;display:flex;justify-content:center}
+.book .cover img{width:100%;max-width:300px;aspect-ratio:1/1;object-fit:contain}
+.book .body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.book .tagline{display:inline-block;align-self:flex-start;background:var(--yel);border:2.5px solid var(--ink);border-radius:999px;padding:1px 12px;font-weight:800;font-size:13px}
+.book h3{margin:0;font-size:20px;line-height:1.25;color:var(--navy)}
+.book p{margin:0;color:var(--muted);font-size:15px}
+.book ul{margin:0;padding-left:18px;color:#3a4350;font-size:15px}
+.book .price{font-weight:800;font-size:20px;color:var(--ink)}
+.book .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:10px}
+.book.soon{opacity:.9}
+.book.soon .cover{background:repeating-linear-gradient(45deg,var(--yel),var(--yel) 14px,#ffe982 14px,#ffe982 28px)}
+.books.two{grid-template-columns:repeat(2,1fr)}
+.note{background:#fff;border:3px solid var(--ink);border-left:12px solid var(--navy);border-radius:16px;padding:14px 18px;margin-top:22px;font-size:15px}
+@media(max-width:960px){.books{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.books,.books.two{grid-template-columns:1fr}}
+
+/* ---------- Start here: level path ---------- */
+.path{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
+.step{background:#fff;border:3px solid var(--ink);border-radius:var(--radius);padding:22px;box-shadow:5px 5px 0 var(--ink);display:flex;flex-direction:column;gap:8px;text-decoration:none}
+.step:before{counter-increment:step;content:counter(step);display:inline-flex;width:40px;height:40px;align-items:center;justify-content:center;background:var(--yel);border:2.5px solid var(--ink);border-radius:12px;font-weight:800}
+.step h3{margin:0;color:var(--navy);font-size:20px}
+.step p{margin:0;color:var(--muted);font-size:15px}
+.step .go{font-weight:800;color:var(--red);margin-top:auto;padding-top:8px}
+a.step:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink)}
+@media(max-width:860px){.path{grid-template-columns:1fr}}
+
+/* ---------- Legal / text pages ---------- */
+.prose{max-width:760px}
+.prose h2{font-size:24px;margin:30px 0 8px}
+.prose p,.prose li{color:#2f3743}
+.prose .upd{color:var(--muted);font-size:14px}
+
+/* ---------- Home: where-to-buy strip ---------- */
+.buy-strip{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
