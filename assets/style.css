@@ -120,8 +120,8 @@ a.lesson:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink)}
 
 /* ---------- Footer ---------- */
 footer{padding:36px 0;color:var(--muted);font-size:14px;text-align:center}
-footer .flinks{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:10px;font-weight:600}
-footer .flinks a{text-decoration:none;color:var(--navy)}
+footer .flinks{display:flex;gap:4px 18px;justify-content:center;flex-wrap:wrap;margin-bottom:10px;font-weight:600}
+footer .flinks a{text-decoration:none;color:var(--navy);display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
 
 /* ---------- Mobile ---------- */
 @media (max-width:960px){.lessons{grid-template-columns:1fr 1fr}.feats{grid-template-columns:1fr 1fr}}
