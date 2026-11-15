@@ -1,7 +1,7 @@
 @font-face{font-family:NTL;src:url(NTL700.woff2) format("woff2");font-display:swap}
 @font-face{font-family:LF8;src:url(LF800.woff2) format("woff2");font-display:swap}
 @font-face{font-family:SB;src:url(SB.woff2) format("woff2");font-display:swap}
-:root{--teal:#1F8A80;--pond:#176F67;--gold:#FFC93C;--pale:#D6F2EE;--ink:#2B2230;--cream:#FFF8EC}
+:root{--teal:#17706a;--pond:#176F67;--gold:#FFC93C;--pale:#D6F2EE;--ink:#2B2230;--cream:#FFF8EC}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--teal);color:var(--ink);font:17px/1.5 SB,system-ui,sans-serif}
@@ -13,7 +13,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;-webki
 .brand small{display:block;font-size:12px;color:var(--pale);letter-spacing:.06em}
 main{max-width:720px;margin:0 auto;padding:0 14px 24px}
 .card{background:#fff;border-radius:24px;padding:18px 18px 22px;text-align:center;box-shadow:0 6px 0 #0E4F49}
-.count{display:inline-block;background:var(--c);color:#fff;font:14px LF8;padding:3px 12px;border-radius:99px}
+.count{display:inline-block;background:var(--c);background:color-mix(in srgb,var(--c) 80%,#000);color:#fff;font:14px LF8;padding:3px 12px;border-radius:99px}
 .big{display:flex;align-items:center;justify-content:center;gap:4%;width:100%;margin:10px 0 4px;padding:6px;border-radius:18px}
 .big:active{background:#f4f4f4}
 .glyph{font:clamp(120px,34vw,200px)/1.25 NTL;color:var(--c)}

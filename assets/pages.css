@@ -64,6 +64,6 @@ a.step:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink)}
 .trust-row span{font-size:14px}
 .trust-note{margin:14px 0 0;text-align:center;font-size:14px;opacity:.9}
 .book .rate{font-size:14px;color:#3a4350}
-.book .stars{color:#f5a300;letter-spacing:1px}
+.book .stars{color:#b36200;letter-spacing:1px}
 .note.author p{margin:8px 0 0}
 @media(max-width:600px){.trust-row{grid-template-columns:1fr 1fr}.trust-row b{font-size:28px}}

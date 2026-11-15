@@ -75,7 +75,7 @@ h2{font-size:clamp(26px,3.2vw,36px);color:var(--navy);margin:0 0 8px;font-weight
 .ws ul{padding-left:20px;margin:14px 0 24px}.ws li{margin:6px 0}
 .ws.ws-compact{grid-template-columns:minmax(0,340px) 1fr;justify-content:center}
 .ws.ws-compact img{max-width:340px;justify-self:center}
-.free{display:inline-block;background:var(--green);color:#fff;font-weight:800;border-radius:10px;padding:2px 10px;font-size:14px}
+.free{display:inline-block;background:#1E7A43;color:#fff;font-weight:800;border-radius:10px;padding:2px 10px;font-size:14px}
 
 /* ---------- Quiz / transcript (details) ---------- */
 details{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:14px 18px;margin:12px 0;box-shadow:4px 4px 0 var(--ink)}
