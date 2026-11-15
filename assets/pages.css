@@ -56,3 +56,14 @@ a.step:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink)}
 
 /* ---------- Home: where-to-buy strip ---------- */
 .buy-strip{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+
+/* books trust strip + ratings (15 Nov 2026) */
+.trust{background:var(--navy);color:#fff;padding:22px 0}
+.trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:center}
+.trust-row b{display:block;font-size:34px;line-height:1.1;color:var(--yel);font-weight:800}
+.trust-row span{font-size:14px}
+.trust-note{margin:14px 0 0;text-align:center;font-size:14px;opacity:.9}
+.book .rate{font-size:14px;color:#3a4350}
+.book .stars{color:#f5a300;letter-spacing:1px}
+.note.author p{margin:8px 0 0}
+@media(max-width:600px){.trust-row{grid-template-columns:1fr 1fr}.trust-row b{font-size:28px}}
