@@ -68,3 +68,9 @@ main{max-width:720px;margin:0 auto;padding:0 14px 24px}
 /* ---------- Back-to-site bar ---------- */
 .sitebar{display:block;background:var(--pond);color:#fff;text-align:center;font:14px LF8;padding:9px 14px;text-decoration:none;letter-spacing:.02em}
 .sitebar:active{background:#0E4F49}
+
+/* UX round 2 (15 Nov 2026): touch targets >= 44px */
+.sitebar{padding:15px 14px}
+.more a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px}
+.brand{min-height:44px}
+.foot a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px}

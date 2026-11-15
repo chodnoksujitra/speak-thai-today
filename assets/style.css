@@ -141,3 +141,9 @@ footer .flinks a{text-decoration:none;color:var(--navy);display:inline-flex;alig
   .nav-toggle:checked ~ .nav-drop{display:flex}
   .nav-toggle:checked ~ .nav-drop a.hide-m{display:block}
 }
+
+/* UX round 2 (15 Nov 2026): touch targets >= 44px */
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:0 8px}
+.crumbs a{display:inline-flex;align-items:center;min-height:44px;padding:0 2px}
+nav .logo{min-height:44px}
+summary{padding:8px 0}

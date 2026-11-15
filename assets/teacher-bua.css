@@ -43,3 +43,7 @@ body.tb .sublock h2{color:#fff}
 
 .tb-play[data-src]{background:var(--red);color:#fff;cursor:pointer}
 .tb-play.on{background:var(--ink);color:#fff}
+
+/* UX round 2 (15 Nov 2026): touch targets >= 44px on phones */
+.tb-play{width:44px;height:44px;font-size:16px}
+body.tb .tb-ans summary{padding:9px 0}
