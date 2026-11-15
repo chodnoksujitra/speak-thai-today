@@ -43,7 +43,7 @@ This is a personal project by **ต้อม** (Sujitra Lorsuwan).
 ## 📞 Connect
 
 - **YouTube**: [Speak Thai Today](https://www.youtube.com/@SpeakThaiToday)
-- **Email**: chodnoksujitra@gmail.com
+- **Email**: hello@myfirstthai.com
 
 ---
 

@@ -28,9 +28,12 @@
 </div></nav>
 <header class="hero"><div class="wrap"><span class="pill">PAGE NOT FOUND</span><h1>Oops, this page isn’t here.</h1>
 <p class="lead">Typed an address from the book? It looks like <b>myfirstthai.com/b1/1</b> (Book 1, Lesson 1).</p>
-<div class="cta"><a class="btn btn-red" href="/b1/">Book 1 lessons</a><a class="btn btn-white" href="/">Home</a></div></div></header>
-<script>(function(){var p=location.pathname.toLowerCase().replace(/\/+$/,'');var m=p.match(/^\/b1\/l?([0-9])$/);
-if(m){location.replace('/b1/'+m[1]+location.hash);return;}if(p==='/b2'||p==='/b1'){location.replace(p+(p==='/b1'?'/':'')+location.hash);}})();</script>
+<div class="cta"><a class="btn btn-red" href="/b1/">Book 1 lessons</a><a class="btn btn-white" href="/b2">Book 2</a><a class="btn btn-white" href="/b3">Book 3</a><a class="btn btn-white" href="/k/01/">Kids ABC</a><a class="btn btn-white" href="/alphabet-chart/">Alphabet chart</a><a class="btn btn-white" href="/">Home</a></div></div></header>
+<script>(function(){var p=location.pathname.toLowerCase().replace(/\/+$/,''),h=location.hash,m;
+if(m=p.match(/^\/b1\/l?([0-9])$/)){location.replace('/b1/'+m[1]+h);return;}
+if(/\/$/.test(location.pathname)&&(m=p.match(/^\/(b2|b3)\/(\d{1,2})$/))){location.replace('/'+m[1]+'/'+m[2]+h);return;}
+if(m=p.match(/^\/k\/(\d)$/)){location.replace('/k/0'+m[1]+'/'+h);return;}
+if(p==='/b2'||p==='/b1'){location.replace(p+(p==='/b1'?'/':'')+h);}})();</script>
 <footer><div class="wrap">
   <div class="flinks"><a href="/">Home</a><a href="/b1/">Book 1</a><a href="/b2">Book 2</a><a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" rel="noopener">YouTube</a><a href="mailto:hello@myfirstthai.com">hello@myfirstthai.com</a></div>
   <div>Learn Thai with Teacher Bua · by Sujitra Lorsuwan · videos on my YouTube channel, Speak Thai Today</div>
