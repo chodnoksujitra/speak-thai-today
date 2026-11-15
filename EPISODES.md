@@ -22,6 +22,7 @@ Master 5 essential Thai phrases that will transform your trip to Thailand! Learn
 **Resources**:
 - 📄 Full Transcript: `/episodes/ep01/transcript.md`
 - 📋 Metadata: `/episodes/ep01/metadata.json`
+- 📝 Worksheet (PDF): `/episodes/ep01/speak-thai-today-travel-thai-1-5-phrases-worksheet.pdf` (added 15 Nov 2026)
 
 ---
 
@@ -55,4 +56,4 @@ Learn the 4 Thai questions every 7-Eleven cashier in Thailand asks, the yes/no f
 
 ---
 
-**Last Updated**: October 23, 2026
+**Last Updated**: November 15, 2026 · Lesson 1 (YouTube C6gWYcoDHf4, 11 Nov) → /lessons/1/ · Lesson 2 page /lessons/2/ goes public 18 Nov
