@@ -47,3 +47,9 @@ body.tb .sublock h2{color:#fff}
 /* UX round 2 (15 Nov 2026): touch targets >= 44px on phones */
 .tb-play{width:44px;height:44px;font-size:16px}
 body.tb .tb-ans summary{padding:9px 0}
+
+/* Audio button states — set by assets/tb-player.js (data-state = idle | loading | playing | error) */
+@keyframes tb-wait{to{opacity:.45}}
+.tb-play[data-state=loading]{animation:tb-wait .6s .35s ease-in-out infinite alternate}
+.tb-play[data-state=error]{background:#fff;color:#b3261e;border:2px solid #b3261e;font-weight:700}
+@media (prefers-reduced-motion:reduce){.tb-play[data-state=loading]{animation:none}}

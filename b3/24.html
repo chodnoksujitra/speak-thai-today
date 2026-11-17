@@ -52,13 +52,5 @@
   <div class="flinks"><a href="/">Home</a><a href="/series/thai-from-zero/">Thai From Zero</a><a href="/learn/">Learn</a><a href="/b1/">Book 1</a><a href="/b2">Book 2</a><a href="/b3">Book 3</a><a href="https://www.youtube.com/@SpeakThaiToday" target="_blank" rel="noopener">YouTube</a><a href="mailto:hello@myfirstthai.com">hello@myfirstthai.com</a></div>
   <div>Learn Thai with Teacher Bua · by Sujitra Lorsuwan · videos on my YouTube channel, Speak Thai Today</div>
 </div></footer>
-<script>
-(function(){var a=new Audio(),cur=null;
-function reset(){if(cur){cur.classList.remove('on');cur.textContent='\u25B6';cur=null;}}
-a.addEventListener('ended',reset);
-a.addEventListener('error',function(){if(cur){var c=cur;reset();c.textContent='!';c.title='Audio could not load. Check your connection and try again.';}});
-document.querySelectorAll('.tb-play[data-src]').forEach(function(b){b.addEventListener('click',function(){
- if(cur===b){a.pause();reset();return;} reset(); a.src=b.getAttribute('data-src'); var pr=a.play(); if(pr&&pr.catch)pr.catch(function(){}); cur=b; b.classList.add('on'); b.textContent='\u275A\u275A';});});
-})();
-</script>
+<script src="/assets/tb-player.js"></script>
 </body></html>

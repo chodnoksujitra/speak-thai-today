@@ -150,3 +150,6 @@ summary{padding:8px 0}
 
 /* UX round 4 (15 Nov 2026): even 2-column badge row on phones (not on book pages) */
 @media (max-width:560px){body:not(.tb) .meta{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}}
+
+/* Mobile menu state = the hidden checkbox #nav-toggle (unchecked = closed, checked = open). Show keyboard focus on the burger. */
+.nav-toggle:focus-visible + .nav-burger{outline:3px solid var(--navy);outline-offset:6px;border-radius:4px}
