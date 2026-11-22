@@ -34,9 +34,13 @@ nav .links a.nav-cta{white-space:nowrap}
 .book.soon{opacity:.9}
 .book.soon .cover{background:repeating-linear-gradient(45deg,var(--yel),var(--yel) 14px,#ffe982 14px,#ffe982 28px)}
 .books.two{grid-template-columns:repeat(2,1fr)}
+.books.four{grid-template-columns:repeat(4,1fr);gap:20px}
+.books.four .cover{padding:12px}
+.books.four .body{padding:14px 16px 18px}
+.books.four h3{font-size:17px}
 .note{background:#fff;border:3px solid var(--ink);border-left:12px solid var(--navy);border-radius:16px;padding:14px 18px;margin-top:22px;font-size:15px}
-@media(max-width:960px){.books{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.books,.books.two{grid-template-columns:1fr}}
+@media(max-width:960px){.books,.books.four{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.books,.books.two,.books.four{grid-template-columns:1fr}}
 
 /* ---------- Start here: level path ---------- */
 .path{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
